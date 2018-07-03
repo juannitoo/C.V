@@ -1,0 +1,83 @@
+#container{
+    background-color: white;
+    padding: 0 0 3em 0;
+    margin-bottom: 5em;
+}
+
+#title-background{
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+    background: url('assets/pictures/background.png');
+}
+
+#picture{
+    z-index: 2;
+    width: 25%;
+    margin: 6em 1em 0 5em;
+}
+
+#name {
+    z-index: 2;
+    font-size: 6em;
+    color: white;
+    margin-top: 1.4em;
+}
+
+#job {
+    z-index: 2;
+    font-size: 6em;
+    color: white;
+}
+
+/* -----  article ----- */
+
+.art-title{
+    font-size: 3em;
+    color : rgb( 150,150,150);
+}
+
+.art-p{
+    font-size: 2em;
+    color : rgb( 150,150,150);
+}
+
+.pre-line {
+    white-space: pre-line;
+    line-height: 31px;
+}
+
+.margin-plus{
+    margin-top : 3%;
+}
+
+.margin-moins{
+    margin-top : -3%;
+}
+
+/* -----  skills ----- */
+
+.article-skills{
+    margin-top: 2em;
+    padding-left: 1em;
+}
+
+/* -----  training ----- */
+
+.article-training{
+    padding-left: 5em;
+    margin-top: -2em;
+}
+
+/* -----  profile ----- */
+
+.text-p{
+    line-height: 32px;
+    width: 90%;
+}
+
+/* -----  contact ----- */
+
+.article-contact {
+    margin-top: -17.8em;
+}
