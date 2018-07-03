@@ -73,7 +73,7 @@ function skills (){
     imgGit.src = "assets/pictures/1etoiles.png"
 
     // bootstrap class and mine
-    articleMain.className = `col-xs-6 article-skills`
+    articleMain.className = `col-xs-12 col-md-6 article-skills`
     skillsTitle.className = `col-xs-offset-1 art-title`
     html.className = `col-xs-offset-1 col-xs-6 art-p`
     js.className = `col-xs-offset-1 col-xs-6 art-p margin-plus`

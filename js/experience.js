@@ -22,14 +22,14 @@ function experience (){
     date3.textContent = `2002 - 2003`
 
     // bootstrap CSS class
-    articleExp.className = `col-xs-6`
-    expTitle.className = `art-title`
+    articleExp.className = `col-xs-12 col-md-6`
+    expTitle.className = `col-xs-offset-1 art-title`
     interim.className = `art-p`
     nego.className = `art-p pre-line`
     commercial.className = `art-p`
-    date1.className = `col-xs-4 art-p`
-    date2.className = `col-xs-4 art-p`
-    date3.className = `col-xs-4 art-p`
+    date1.className = `col-xs-offset-1 col-xs-4 art-p`
+    date2.className = `col-xs-offset-1 col-xs-4 art-p`
+    date3.className = `col-xs-offset-1 col-xs-4 art-p`
     row1.className = `row`
     row2.className = `row`
     row3.className = `row`

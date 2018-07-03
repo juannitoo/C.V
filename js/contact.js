@@ -34,7 +34,7 @@ function contact (){
     webText3.target = `_blank`
 
     // bootstrap CSS class
-    articleContact.className = `col-xs-6 article-contact`
+    articleContact.className = `col-xs-12 col-md-6 article-contact`
     titleContact.className = `col-xs-offset-1 art-title`
     adress.className = `col-xs-offset-1 art-p margin-plus`
     adressText.className = `col-xs-offset-1 art-p pre-line`

@@ -15,7 +15,7 @@ function title (){
 
     picture.className = "col-xs-3"
     name.className = "col-xs-7"
-    job.className = "col-xs-offset-1 col-xs-7"
+    job.className = "col-xs-offset-1 col-xs-6 "
     row.className = "row"
 
     let container = document.getElementById("container")
