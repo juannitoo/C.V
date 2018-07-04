@@ -13,6 +13,7 @@ function contact (){
     const webText2 = document.createElement('a')
     const webText3 = document.createElement('a')
 
+    articleContact.id = `contact`
     titleContact.textContent = `CONTACT`
     adress.textContent = `ADRESSE`
     adressText.textContent = `24 Av françois Mitterrand \n 64500 Ciboure`
@@ -34,7 +35,7 @@ function contact (){
     webText3.target = `_blank`
 
     // bootstrap CSS class
-    articleContact.className = `col-xs-12 col-md-6 article-contact`
+    articleContact.className = `col-xs-12 col-md-6 article-contact opacity`
     titleContact.className = `col-xs-offset-1 art-title`
     adress.className = `col-xs-offset-1 art-p margin-plus`
     adressText.className = `col-xs-offset-1 art-p pre-line`

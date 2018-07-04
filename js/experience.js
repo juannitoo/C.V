@@ -12,7 +12,7 @@ function experience (){
     const row2 = document.createElement('div')
     const row3 = document.createElement('div')
 
-
+    articleExp.id = `experience`
     expTitle.textContent = `EXPÉRIENCES`
     interim.textContent = `Ouvrier Bâtiment - Industrie \n Manpower -Adecco`
     nego.textContent = `Negociateur immobilier \n Demeurimo Loiret`
@@ -22,14 +22,14 @@ function experience (){
     date3.textContent = `2002 - 2003`
 
     // bootstrap CSS class
-    articleExp.className = `col-xs-12 col-md-6`
-    expTitle.className = `col-xs-offset-1 art-title`
+    articleExp.className = `col-xs-12 col-md-6 opacity`
+    expTitle.className = `art-title`
     interim.className = `art-p`
     nego.className = `art-p pre-line`
     commercial.className = `art-p`
-    date1.className = `col-xs-offset-1 col-xs-4 art-p`
-    date2.className = `col-xs-offset-1 col-xs-4 art-p`
-    date3.className = `col-xs-offset-1 col-xs-4 art-p`
+    date1.className = `col-xs-4 art-p`
+    date2.className = `col-xs-4 art-p`
+    date3.className = `col-xs-4 art-p`
     row1.className = `row`
     row2.className = `row`
     row3.className = `row`

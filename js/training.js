@@ -15,6 +15,7 @@ function training (){
     const row3 = document.createElement('div')
     const row4 = document.createElement('div')
 
+    articleTrainig.id = "formation"
     trainingTitle.textContent = `FORMATION`
     devDegree.textContent = `Titre pro développeur logiciel`
     jsBayonne.textContent = `Formation Javascript \n Greta Bayonne`
@@ -26,16 +27,16 @@ function training (){
     date4.textContent = `2000`
 
     // bootstrap CSS class
-    articleTrainig.className = `col-xs-12 col-md-6 article-training`
-    trainingTitle.className = `col-xs-offset-1 art-title`
+    articleTrainig.className = `col-xs-12 col-md-6 article-training opacity`
+    trainingTitle.className = `art-title`
     devDegree.className = `art-p`
     jsBayonne.className = `art-p pre-line margin-plus`
     tutorial.className = `art-p margin-plus`
     bac.className = `art-p margin-plus`
-    date1.className = `col-xs-offset-1 col-xs-3 art-p`
-    date2.className = `col-xs-offset-1 col-xs-3 art-p margin-plus`
-    date3.className = `col-xs-offset-1 col-xs-3 art-p margin-plus`
-    date4.className = `col-xs-offset-1 col-xs-3 art-p margin-plus`
+    date1.className = ` col-xs-3 art-p`
+    date2.className = `col-xs-3 art-p margin-plus`
+    date3.className = `col-xs-3 art-p margin-plus`
+    date4.className = `col-xs-3 art-p margin-plus`
     row1.className = `row`
     row2.className = `row`
     row3.className = `row`

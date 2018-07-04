@@ -1,8 +1,47 @@
 #container{
     background-color: white;
-    padding: 0 0 3em 0;
-    margin-bottom: 5em;
+    padding: 0 0 15em 0;
 }
+
+#papyrus{
+    width:100%;
+    margin-left: 0%;
+    margin-top: -8em;
+}
+
+#papyrus:hover{
+    cursor: pointer;
+}
+
+@keyframes marge-anim {
+    from {margin-top: -120em;}
+    to {margin-top: 0em;}
+}
+
+.animation-marge{
+    animation-name: marge-anim;
+    animation-duration: 1.2s;
+}
+
+.marge-hight{
+    margin-top: -120em;
+}
+
+
+@keyframes rotation {
+    from {transform: rotateY(180deg);}
+    to {transform: rotateY(0deg);}
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.animation{
+    backface-visibility: hidden;
+    animation-name: rotation;
+    animation-duration: 2s;
+}
+
+/* ------- titre nom ------- */
 
 #title-background{
     z-index: 1;
@@ -15,6 +54,13 @@
     z-index: 2;
     width: 25%;
     margin: 6em 1em 0 5em;
+    /* backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; */
+}
+
+.opacity{
+    opacity: 0;
 }
 
 #name {
@@ -26,7 +72,7 @@
 
 #job {
     z-index: 2;
-    font-size: 6em;
+    font-size: 5em;
     color: white;
 }
 
@@ -109,20 +155,18 @@
 @media(max-width:991px){
 
 #picture{
-    z-index: 2;
+
     width: 30%;
     margin: 6em 1em 0 5em;
 }
 
 #name {
-    z-index: 2;
     font-size: 3em;
     color: white;
     margin-top: 3em;
 }
 
 #job {
-    z-index: 2;
     font-size: 2.5em;
     color: white;
 }
@@ -152,20 +196,17 @@
 @media(max-width:768px){
 
 #picture{
-    z-index: 2;
     width: 35%;
     margin: 6em 0 0 31%;
 }
 
 #name {
-    z-index: 2;
     font-size: 2.5em;
     color: white;
     margin: 1em 0 0 1em;;
 }
 
 #job {
-    z-index: 2;
     font-size: 2.5em;
     color: white;
 }

@@ -19,9 +19,10 @@
 </head>
 
 <body style="font-family:'candara', 'Times New Roman', sans-serif; 
-        background-color: rgb(199, 199, 199)">
+        background-color: rgb(148, 146, 146)">
 
-    <div class="container" id="container"></div>
+    <div class="container marge-hight" id="container"></div>
+    <div><img id="papyrus" src="assets/pictures/rouleau.png" /> </div>
 
 
     <script type="text/javascript" src="js/title.js"></script>
@@ -40,7 +41,58 @@
         profile()
         contact()
         experience()
+        viewCv()
     })
+
+    function viewCv (){
+
+        const papyrus = document.getElementById('papyrus')
+        const container = document.getElementById('container')
+
+        papyrus.addEventListener('click', function(){
+
+            // animation papyrus
+            container.classList.add('animation-marge');
+            container.classList.remove('marge-hight');
+
+            setTimeout(() => {
+                // opacity animation
+                // for title
+                const picture = document.getElementById('picture')
+                picture.classList.add('animation');
+                picture.classList.remove('opacity');
+                const myName = document.getElementById('name')
+                myName.classList.add('animation');
+                myName.classList.remove('opacity');
+                const job = document.getElementById('job')
+                job.classList.add('animation');
+                job.classList.remove('opacity');
+                
+                // each "object"
+                const skills = document.getElementById('skills')
+                skills.classList.add('animation');
+                skills.classList.remove('opacity');
+
+                const formation = document.getElementById('formation')
+                formation.classList.add('animation');
+                formation.classList.remove('opacity');
+
+                const profile = document.getElementById('profile')
+                profile.classList.add('animation');
+                profile.classList.remove('opacity');
+
+                const contact = document.getElementById('contact')
+                contact.classList.add('animation');
+                contact.classList.remove('opacity');
+
+                const experience = document.getElementById('experience')
+                experience.classList.add('animation');
+                experience.classList.remove('opacity');
+
+
+            }, 200);
+        })
+    }
 
 
     </script>

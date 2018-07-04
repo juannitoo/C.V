@@ -22,9 +22,10 @@ function profile (){
 
 
     // bootstrap CSS class
-    articleProfile.className = `col-xs-12 col-md-6`
-    titleProfile.className = `col-xs-offset-1 art-title`
-    text.className = `col-xs-offset-1 art-p text-p`
+    articleProfile.className = `col-xs-12 col-md-6 opacity`
+    articleProfile.id = `profile`
+    titleProfile.className = `art-title`
+    text.className = `art-p text-p`
 
     let container = document.getElementById("container")
     container.appendChild(articleProfile)

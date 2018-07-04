@@ -1,8 +1,9 @@
 function skills (){
     // i create main article
     const articleMain = document.createElement('article')
+    articleMain.id = "skills"
 
-    // i create éléments with assignation
+    // i create bootstrap rows
     const rowHtml = document.createElement('div')
     const rowJs = document.createElement('div')
     const rowVanilla = document.createElement('div')
@@ -26,6 +27,7 @@ function skills (){
     rowRef.className = "row"
     rowGit.className = "row"
 
+    // i create éléments with assignation
     const skillsTitle = document.createElement('h3')
     const html = document.createElement('p')
     const js = document.createElement('p')
@@ -73,7 +75,7 @@ function skills (){
     imgGit.src = "assets/pictures/1etoiles.png"
 
     // bootstrap class and mine
-    articleMain.className = `col-xs-12 col-md-6 article-skills`
+    articleMain.className = `col-xs-12 col-md-6 article-skills opacity`
     skillsTitle.className = `col-xs-offset-1 art-title`
     html.className = `col-xs-offset-1 col-xs-6 art-p`
     js.className = `col-xs-offset-1 col-xs-6 art-p margin-plus`
