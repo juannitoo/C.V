@@ -1,6 +1,24 @@
+body{
+    padding-top: 2em;
+    padding-bottom : 50em;
+}
+
 #container{
     background-color: white;
-    padding: 0 0 15em 0;
+    padding: 0em 0 15em 0;
+
+}
+
+#background-gray{
+    z-index:1;
+    width:100%;
+    position: absolute;
+    top: -2em;
+    left: 0;
+}
+
+.marge-hight{
+    margin-top: -124em;
 }
 
 #papyrus{
@@ -13,8 +31,16 @@
     cursor: pointer;
 }
 
+#papyrus-vert{
+    z-index:2;
+    width:100%;
+    position: absolute;
+    top: -2.5em;
+    left: 0;
+}
+
 @keyframes marge-anim {
-    from {margin-top: -120em;}
+    from {margin-top: -124em;}
     to {margin-top: 0em;}
 }
 
@@ -22,11 +48,6 @@
     animation-name: marge-anim;
     animation-duration: 1.2s;
 }
-
-.marge-hight{
-    margin-top: -120em;
-}
-
 
 @keyframes rotation {
     from {transform: rotateY(180deg);}
@@ -52,11 +73,8 @@
 
 #picture{
     z-index: 2;
-    width: 25%;
-    margin: 6em 1em 0 5em;
-    /* backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; */
+    width: 22%;
+    margin: 10em 1em 0 5em;
 }
 
 .opacity{
@@ -67,7 +85,7 @@
     z-index: 2;
     font-size: 6em;
     color: white;
-    margin-top: 1.4em;
+    margin-top: 1.8em;
 }
 
 #job {
