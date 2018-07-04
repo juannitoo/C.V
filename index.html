@@ -111,64 +111,63 @@
             }, 200);
         })
 
-         // papyrus vert click event
-         
-        
+         // papyrus vert click event       
          papyrusVert.addEventListener('click', function(){
-            // je neutralise le click au début
+
+            // cancel click when not the div is roll
             if ( container.className === 'container animation-marge' ){
-            // animation papyrus
-            setTimeout(() => {
-                container.classList.remove('animation-marge')
-                container.classList.add('animation-marge2')
-                container.classList.add('marge-hight')
-            }, 500);
-           
-            // opacity and rotation animation
-            // for title
-            const picture = document.getElementById('picture')
-            picture.classList.remove('animation')
-            picture.classList.add('animation-rotation-inverse')
-            picture.classList.add('opacity')
-            const myName = document.getElementById('name')
-            myName.classList.remove('animation')
-            myName.classList.add('animation-rotation-inverse')
-            myName.classList.add('opacity')
-            const job = document.getElementById('job')
-            job.classList.remove('animation')
-            job.classList.add('animation-rotation-inverse')
-            job.classList.add('opacity')
-            
-            // each "object"
-            const skills = document.getElementById('skills')
-            skills.classList.remove('animation')
-            skills.classList.add('animation-rotation-inverse')
-            skills.classList.add('opacity')
 
-            const formation = document.getElementById('formation')
-            formation.classList.remove('animation')
-            formation.classList.add('animation-rotation-inverse');
-            formation.classList.add('opacity')
+                // animation papyrus
+                setTimeout(() => {
+                    container.classList.remove('animation-marge')
+                    container.classList.add('animation-marge2')
+                    container.classList.add('marge-hight')
+                }, 500);
+                
+                // opacity and rotation animation
+                // for title
+                const picture = document.getElementById('picture')
+                picture.classList.remove('animation')
+                picture.classList.add('animation-rotation-inverse')
+                picture.classList.add('opacity')
+                const myName = document.getElementById('name')
+                myName.classList.remove('animation')
+                myName.classList.add('animation-rotation-inverse')
+                myName.classList.add('opacity')
+                const job = document.getElementById('job')
+                job.classList.remove('animation')
+                job.classList.add('animation-rotation-inverse')
+                job.classList.add('opacity')
+                
+                // each "object"
+                const skills = document.getElementById('skills')
+                skills.classList.remove('animation')
+                skills.classList.add('animation-rotation-inverse')
+                skills.classList.add('opacity')
 
-            const profile = document.getElementById('profile')
-            profile.classList.remove('animation')
-            profile.classList.add('animation-rotation-inverse')
-            profile.classList.add('opacity')
+                const formation = document.getElementById('formation')
+                formation.classList.remove('animation')
+                formation.classList.add('animation-rotation-inverse');
+                formation.classList.add('opacity')
 
-            const contact = document.getElementById('contact')
-            contact.classList.remove('animation')
-            contact.classList.add('animation-rotation-inverse')
-            contact.classList.add('opacity')
+                const profile = document.getElementById('profile')
+                profile.classList.remove('animation')
+                profile.classList.add('animation-rotation-inverse')
+                profile.classList.add('opacity')
 
-            const experience = document.getElementById('experience')
-            experience.classList.remove('animation')
-            experience.classList.add('animation-rotation-inverse')
-            experience.classList.add('opacity')
-        }
+                const contact = document.getElementById('contact')
+                contact.classList.remove('animation')
+                contact.classList.add('animation-rotation-inverse')
+                contact.classList.add('opacity')
+
+                const experience = document.getElementById('experience')
+                experience.classList.remove('animation')
+                experience.classList.add('animation-rotation-inverse')
+                experience.classList.add('opacity')
+            }
         })
         
     }
-
 
     </script>
 
