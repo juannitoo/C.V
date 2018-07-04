@@ -22,7 +22,7 @@ function profile (){
 
 
     // bootstrap CSS class
-    articleProfile.className = `col-xs-12 col-md-6 opacity`
+    articleProfile.className = `col-xs-11 col-xs-offset-1 col-md-offset-0 col-md-6 opacity`
     articleProfile.id = `profile`
     titleProfile.className = `art-title`
     text.className = `art-p text-p`

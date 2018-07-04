@@ -21,13 +21,17 @@ body{
     margin-top: -124em;
 }
 
+.marge-initial{
+    margin-top: 0em;
+}
+
 #papyrus{
     width:100%;
     margin-left: 0%;
-    margin-top: -8em;
+    margin-top: -2em;
 }
 
-#papyrus:hover{
+#papyrus:hover, #papyrus-vert:hover{
     cursor: pointer;
 }
 
@@ -35,7 +39,7 @@ body{
     z-index:2;
     width:100%;
     position: absolute;
-    top: -2.5em;
+    top: 1em;
     left: 0;
 }
 
@@ -46,6 +50,16 @@ body{
 
 .animation-marge{
     animation-name: marge-anim;
+    animation-duration: 1.2s;
+}
+
+@keyframes marge-anim-enrouler {
+    from {margin-top: 0em;}
+    to {margin-top: -124em;}
+}
+
+.animation-marge2{
+    animation-name: marge-anim-enrouler;
     animation-duration: 1.2s;
 }
 
@@ -60,6 +74,19 @@ body{
     backface-visibility: hidden;
     animation-name: rotation;
     animation-duration: 2s;
+}
+
+@keyframes rotation-inverse {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(180deg);}
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.animation-rotation-inverse{
+    backface-visibility: hidden;
+    animation-name: rotation-inverse;
+    animation-duration: 1s;
 }
 
 /* ------- titre nom ------- */
@@ -147,7 +174,19 @@ body{
 }
 
 
+@media(max-width:1600px){
+
+.marge-hight{
+    margin-top: -120em;
+}
+
+}
+
 @media(max-width:1200px){
+
+.marge-hight{
+    margin-top: -140em;
+}
 
 #picture{
     z-index: 2;
@@ -172,8 +211,16 @@ body{
 
 @media(max-width:991px){
 
-#picture{
+.art-p{
+    font-size: 1.5em;
+    color : rgb( 150,150,150);
+}
 
+.marge-hight{
+    margin-top: -200em;
+}
+
+#picture{
     width: 30%;
     margin: 6em 1em 0 5em;
 }
@@ -213,6 +260,19 @@ body{
 
 @media(max-width:768px){
 
+#container{
+    width:94%;
+    margin-left: 2.5%
+}
+
+#background-gray{
+    z-index:1;
+    width:100%;
+    position: absolute;
+    top: 0em;
+    left: 0;
+}
+
 #picture{
     width: 35%;
     margin: 6em 0 0 31%;
@@ -228,4 +288,43 @@ body{
     font-size: 2.5em;
     color: white;
 }
+}
+
+@media(max-width:560px){
+    .marge-hight{
+        margin-top: -210em;
+    }
+}
+
+@media(max-width:480px){
+    .marge-hight{
+        margin-top: -220em;
+    }
+}
+
+@media(max-width:425px){
+    .marge-hight{
+        margin-top: -229em;
+    }
+}
+
+@media(max-width:375px){
+    .marge-hight{
+        margin-top: -238em;
+    }
+}
+
+@media(min-width:2000px){
+    .marge-hight{
+        margin-top: -120em;
+    }
+    #background-gray{
+        position: absolute;
+        top: -5em;
+        left: 0;
+    }
+    #container{
+        padding: 6.75em 0 15em 0;
+    
+    }
 }

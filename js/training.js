@@ -27,7 +27,7 @@ function training (){
     date4.textContent = `2000`
 
     // bootstrap CSS class
-    articleTrainig.className = `col-xs-12 col-md-6 article-training opacity`
+    articleTrainig.className = `col-xs-12 col-xs-offset-1 col-md-offset-0 col-md-6 article-training opacity`
     trainingTitle.className = `art-title`
     devDegree.className = `art-p`
     jsBayonne.className = `art-p pre-line margin-plus`

@@ -22,7 +22,7 @@ function experience (){
     date3.textContent = `2002 - 2003`
 
     // bootstrap CSS class
-    articleExp.className = `col-xs-12 col-md-6 opacity`
+    articleExp.className = `col-xs-12 col-xs-offset-1 col-md-offset-0 col-md-6 opacity`
     expTitle.className = `art-title`
     interim.className = `art-p`
     nego.className = `art-p pre-line`

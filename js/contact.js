@@ -22,7 +22,6 @@ function contact (){
     email.textContent = `EMAIL`
     emailText.href = `mailto:jeanbalangue@hotmail.fr`
     emailText.textContent = `jeanbalangue@hotmail.fr`
-    emailText.target = `_blank`
     web.textContent = `SITE WEB / LOGICIEL`
     webText1.href = `http://www.locationsaintjeandeluz.fr`
     webText2.href = `http://www.iparglass.fr`
