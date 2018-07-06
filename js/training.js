@@ -1,5 +1,5 @@
 function training (){
-    // i create 'article' and elements
+    // i create 'article' and html elements
     const articleTrainig = document.createElement('article')
     const trainingTitle = document.createElement('h1')
     const devDegree = document.createElement('p')
@@ -18,6 +18,7 @@ function training (){
     articleTrainig.id = "formation"
     trainingTitle.textContent = `FORMATION`
     devDegree.textContent = `Titre pro développeur logiciel`
+    //  "\n" is css linked to work. "pre-line" 137
     jsBayonne.textContent = `Formation Javascript \n Greta Bayonne`
     tutorial.textContent = `Plusieurs tutoriaux online`
     bac.textContent = `Bac ES`
@@ -29,6 +30,7 @@ function training (){
     // bootstrap CSS class
     articleTrainig.className = `col-xs-12 col-xs-offset-1 col-md-offset-0 col-md-6 article-training opacity`
     trainingTitle.className = `art-title`
+    trainingTitle.id = "training"
     devDegree.className = `art-p`
     jsBayonne.className = `art-p pre-line margin-plus`
     tutorial.className = `art-p margin-plus`
@@ -42,6 +44,7 @@ function training (){
     row3.className = `row`
     row4.className = `row`
 
+    // append to dom
     let container = document.getElementById("container")
     container.appendChild(articleTrainig)
     articleTrainig.appendChild(trainingTitle)

@@ -1,7 +1,7 @@
 function skills (){
-    // i create main article
-    const articleMain = document.createElement('article')
-    articleMain.id = "skills"
+    // i create skils article
+    const skillsArticle = document.createElement('article')
+    skillsArticle.id = "skills"
 
     // i create bootstrap rows
     const rowHtml = document.createElement('div')
@@ -40,6 +40,7 @@ function skills (){
     const referencement = document.createElement('p')
     const git = document.createElement('p')
 
+    skillsTitle.id = `skills-title`
     skillsTitle.textContent = `COMPETENCES`
     html.textContent = `Html - CSS - Bootstrap`
     js.textContent = `JavaScript`
@@ -75,7 +76,7 @@ function skills (){
     imgGit.src = "assets/pictures/1etoiles.png"
 
     // bootstrap class and mine
-    articleMain.className = `col-xs-12 col-md-6 article-skills opacity`
+    skillsArticle.className = `col-xs-12 col-md-6 article-skills opacity`
     skillsTitle.className = `col-xs-offset-1 art-title`
     html.className = `col-xs-offset-1 col-xs-6 art-p`
     js.className = `col-xs-offset-1 col-xs-6 art-p margin-plus`
@@ -100,46 +101,46 @@ function skills (){
     imgGit.className = `col-xs-4 margin-moins`
 
     let container = document.getElementById('container')
-    container.appendChild(articleMain)
-    articleMain.appendChild(skillsTitle)
+    container.appendChild(skillsArticle)
+    skillsArticle.appendChild(skillsTitle)
 
-    articleMain.appendChild(rowHtml)
+    skillsArticle.appendChild(rowHtml)
     rowHtml.appendChild(html)
     rowHtml.appendChild(imgHtml)
 
-    articleMain.appendChild(rowJs)
+    skillsArticle.appendChild(rowJs)
     rowJs.appendChild(js)
     rowJs.appendChild(imgJs)
 
-    articleMain.appendChild(rowVanilla)
+    skillsArticle.appendChild(rowVanilla)
     rowVanilla.appendChild(vanilla)
     rowVanilla.appendChild(imgVanilla)
 
-    articleMain.appendChild(rowJquery)
+    skillsArticle.appendChild(rowJquery)
     rowJquery.appendChild(jquery)
     rowJquery.appendChild(imgJquery)
 
-    articleMain.appendChild(rowNode)
+    skillsArticle.appendChild(rowNode)
     rowNode.appendChild(nodeJs)
     rowNode.appendChild(imgNode)
 
-    articleMain.appendChild(rowPhp)
+    skillsArticle.appendChild(rowPhp)
     rowPhp.appendChild(php)
     rowPhp.appendChild(imgPhp)
 
-    articleMain.appendChild(rowPython)
+    skillsArticle.appendChild(rowPython)
     rowPython.appendChild(python)
     rowPython.appendChild(imgPython)
 
-    articleMain.appendChild(rowPhotoshop)
+    skillsArticle.appendChild(rowPhotoshop)
     rowPhotoshop.appendChild(photoshop)
     rowPhotoshop.appendChild(imgPhotoshop)
 
-    articleMain.appendChild(rowRef)
+    skillsArticle.appendChild(rowRef)
     rowRef.appendChild(referencement)
     rowRef.appendChild(imgRef)
 
-    articleMain.appendChild(rowGit)
+    skillsArticle.appendChild(rowGit)
     rowGit.appendChild(git)
     rowGit.appendChild(imgGit)
 

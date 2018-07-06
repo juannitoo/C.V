@@ -1,4 +1,5 @@
 function title (){
+    // header : generate name - job- picture
     const myName = document.createElement('h1')
     const job = document.createElement('h2')
     const picture = document.createElement('img')
@@ -24,6 +25,5 @@ function title (){
     row.appendChild(picture)
     row.appendChild(myName)
     row.appendChild(job);
-
-    
+   
 }

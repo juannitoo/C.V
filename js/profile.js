@@ -4,6 +4,7 @@ function profile (){
     const titleProfile = document.createElement('h1')
     const text = document.createElement('p')
 
+    titleProfile.id = `profile-title`
     titleProfile.textContent = `PROFIL`
     text.textContent = `Agé de 38 ans, j’ai été intéressé par le 
     développement informatique sur le tard, 

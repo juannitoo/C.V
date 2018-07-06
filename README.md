@@ -5,5 +5,7 @@
 * Réalisé entièrement en Javascript Vanilla avec l'aide Bootstrap. 
 * le responsive est réalisé 
 * animation façon papyrus à dérouler au click
+* Tooltip
 
 #### Pour l'afficher, il faut cloner / télécharger le dossier et lancer index.html
+

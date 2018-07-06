@@ -13,7 +13,9 @@ function experience (){
     const row3 = document.createElement('div')
 
     articleExp.id = `experience`
+    expTitle.id = `experience-title`
     expTitle.textContent = `EXPÉRIENCES`
+    // "\n" is css linked to work "pre-line" 137
     interim.textContent = `Ouvrier Bâtiment - Industrie \n Manpower -Adecco`
     nego.textContent = `Negociateur immobilier \n Demeurimo Loiret`
     commercial.textContent = `Vendeur Délégué Commercial \n Cegetel`

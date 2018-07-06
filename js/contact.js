@@ -1,5 +1,5 @@
 function contact (){
-    // i create 'article' and elements
+    // i create contact 'article' and elements
     const articleContact = document.createElement('article')
     const titleContact = document.createElement('h1')
     const adress = document.createElement('p')
@@ -14,8 +14,12 @@ function contact (){
     const webText3 = document.createElement('a')
 
     articleContact.id = `contact`
+    webText1.id = `loc-st-jean`
+    webText2.id = `iparglass`
+    webText3.id = `github`
     titleContact.textContent = `CONTACT`
     adress.textContent = `ADRESSE`
+    // \n is css linked to work "pre-line" 137
     adressText.textContent = `24 Av françois Mitterrand \n 64500 Ciboure`
     phone.textContent = `TÉLÉPHONE`
     phoneNumber.textContent = `06 51 21 35 17`
@@ -47,6 +51,7 @@ function contact (){
     webText2.className = `col-xs-offset-1 art-p pre-line`
     webText3.className = `col-xs-offset-1 art-p pre-line`
 
+    // append elements
     let container = document.getElementById("container")
     container.appendChild(articleContact)
     articleContact.appendChild(titleContact)
@@ -62,4 +67,5 @@ function contact (){
     articleContact.appendChild(webText1)
     articleContact.appendChild(webText2)
     articleContact.appendChild(webText3)
+    
 }
