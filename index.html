@@ -1,12 +1,13 @@
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
--Ce CV une démo de mes capacités en JS natif, donc je génère le html en js. - -
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -   -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - -
+- Ce CV est une démo de mes capacités en JS natif, 
+- - - - -  donc je génère le html en js. - - - - -
+- - - - - - - - - - - - - - - - - - - - - - -  -->
 <!doctype html>
 <html lang="fr">
 <head>
   	<meta charset="utf-8">
 	<title>Mon C.V </title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- comptibilité IE bootstrap -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +28,7 @@
     <div class="container marge-hight" id="container"></div>
     <div><img id="papyrus-vert" src="assets/pictures/rouleau-vert.png" /></div>
     <div><img id="background-gray" src="assets/pictures/fond-gris-haut.png" /> </div>
-    <div><img id="papyrus" src="assets/pictures/rouleau.png" /> </div>
+    <div><img  id="papyrus" src="assets/pictures/rouleau.png" /> </div>
 
 
     <script type="text/javascript" src="js/title.js"></script>
@@ -36,8 +37,8 @@
     <script type="text/javascript" src="js/profile.js"></script>
     <script type="text/javascript" src="js/contact.js"></script>
     <script type="text/javascript" src="js/experience.js"></script>
-    <script type="text/javascript" src="js/tooltips.js"></script>
-    <script type="text/javascript" src="js/tooltip-print.js"></script>
+    <script type="text/javascript" src="js/tooltips/tooltips.js"></script>
+    <script type="text/javascript" src="js/tooltips/tooltip-print.js"></script>
 
     <script>
 
@@ -58,14 +59,14 @@
     function viewCv (){
 
         const papyrus = document.getElementById('papyrus')
-        const papyrusVert = document.getElementById('papyrus-vert')
+        const greenPapyrus = document.getElementById('papyrus-vert')
         const container = document.getElementById('container')
         let tooltipBooleanVar = false
 
         // responsive papyrus i change papyrus image
-        if (screen.width < 1600){
+        if ( screen.width < 1600  ){
             papyrus.src = "assets/pictures/rouleau-1600px.png"
-            papyrusVert.src = "assets/pictures/rouleau-vert-1600px.png"
+            greenPapyrus.src = "assets/pictures/rouleau-vert-1600px.png"
         }
 
         // papyrus click event
@@ -113,7 +114,7 @@
         })
 
          // papyrus vert click event       
-         papyrusVert.addEventListener('click', function(){
+         greenPapyrus.addEventListener('click', function(){
 
             // cancel click when the div is rolled
             if ( container.className === 'container animation-marge' ){
@@ -191,16 +192,8 @@
         tooltipPrint(experienceTitle, 'tooltip-experience')
 
         // tooltip papyrus
-        // marche pas encore.   ??
-        // papyrus.addEventListener('mouseover', function(){
-        //     const container2 = document.getElementById('container')
-        //     const ttPapyrus = document.getElementById('tooltip-papyrus')
-        //     if ( tooltipBooleanVar ){
-        //         tooltipPrint(papyrus, 'tooltip-papyrus')
-        //     } else {
-        //         if (ttPapyrus != undefined) ttPapyrus.style.display = "none"
-        //     }
-        // })
+        tooltipPrint(papyrus, 'tooltip-papyrus')
+
     }
 
     </script>

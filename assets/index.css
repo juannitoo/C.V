@@ -96,7 +96,7 @@ body{
     z-index: 1;
     width: 100%;
     height: 500px;
-    background: url('assets/pictures/background.png');
+    background: url('../assets/pictures/background.png');
 }
 
 #picture{
@@ -177,7 +177,8 @@ body{
 /* -----  tooltip ----- */
 
 .tooltips{
-    display: none;
+    /*display: none;*/
+    visibility: hidden;
     border: 8px dotted green;
     background-color:rgb(240, 240, 240);
     width: 60%;

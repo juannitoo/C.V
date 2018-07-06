@@ -53,7 +53,7 @@ function tooltips () {
     l'intermédiaire d'une formation JavaScript au greta de Bayonne. J'y ai revu mes bases et poser des questions
     sur des sujets qui me posaient problèmes. J'ai pu voir comment coder certains professionnels et rencontrer 
     des gens qui partagent la même passion que moi. J'ai également découvert quelques techniques où outils 
-    comme le MVC, l'éditeur VScode, les frameworks, la console ou encore Git et Github (:-o)`
+    comme le MVC, l'éditeur VScode, les frameworks, la console ou encore Git et Github.`
 
     // competences
     const tooltipSkills = document.createElement('p')
@@ -99,17 +99,15 @@ function tooltips () {
     tooltipExperience.id = `tooltip-experience`
     tooltipExperience.className = `tooltips`
     tooltipExperience.textContent = `Je n'ai pas d'expérience en entreprise IT, mais j'ai des connaissances
-    techniques qui me permettent de postuler à vote offre d'emploi. Mon parcours m'a permis 
+    techniques qui me permettent de postuler à votre offre d'emploi. Mon parcours m'a permis 
     d'avoir les qualités nécessaires pour travailler en équipe, et je connais également les principes 
-    de la relation client.`
+    de la relation client ainsi que l'analyse de leur besoin.`
 
     // papyrus
     const tooltipPapyrus = document.createElement('p')
     tooltipPapyrus.id = `tooltip-papyrus`
     tooltipPapyrus.className = `tooltips`
-    tooltipPapyrus.textContent = `L'UX voudrait que vous puissiez refermer le papyrus en cliquant ici,
-    mais moi je préfère que vous relisiez mon nom :) Alors il faut cliquer sur le papyrus du haut
-    pour le refermer. J'aurais pu mettre une flêche ou deux pour l'utilisateur, mais bon pas à vous :)))`
+    // textContent in tooltipsprint.js 
 
     // append elements with timeout for smooth papyrus animation
     setTimeout(() => {
@@ -119,9 +117,10 @@ function tooltips () {
         document.body.appendChild(tooltipFormation)
         document.body.appendChild(tooltipSkills)
         document.body.appendChild(tooltipProfile)
-        document.body.appendChild(tooltipExperience)
-        document.body.appendChild(tooltipPapyrus)
+        document.body.appendChild(tooltipExperience)      
     }, 1000);
     
+    // timeout not wanted
+    document.body.appendChild(tooltipPapyrus)
 
 }
