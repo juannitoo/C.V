@@ -2,17 +2,18 @@ function tooltips () {
     // not responsive. mouseover event
 
     // locationsaintjeandeluz.fr
-    const tooltipStJean = document.createElement('p')
+    const tooltipStJean = document.createElement('div')
     tooltipStJean.id = `tooltip-st-jean`
     tooltipStJean.className = `tooltips`
-    tooltipStJean.innerHTML =`C'est le premier site que j'ai réalisé en 2013, 
-    et qui permet à n'importe quel francophone de réaliser un contrat de location 
+    tooltipStJean.innerHTML = `<h2>locationsaintjeandeluz</h2>`
+    tooltipStJean.innerHTML +=`C'est le premier site que j'ai réalisé en 2013, 
+    et qui permet à n'importe quel francophone de générer un contrat de location 
     saisonnière via mon template. Ce site m'aura fait connaître les parties back-end et 
     front-end d'un projet. J'ai tout fait tout seul, pour apprendre.`
-    tooltipStJean.innerHTML += ` L'espace membre de ce site, qui permettait la sauvegarde 
+    tooltipStJean.innerHTML += '<br />'+`L'espace membre de ce site, qui permettait la sauvegarde 
     de leur contrat aux internautes, est actuellement fermé pour des problèmes d'encodage de 
-    caractères dû au paramétrage de mon serveur mutualisé. La correction et la migration vers 
-    une nouvelle architecture de cette base ont néanmoins été réalisé pour soutenir mon 
+    caractères dûs au paramétrage de mon serveur mutualisé. La correction et la migration vers 
+    une nouvelle architecture de cette base ont néanmoins été réalisés pour soutenir mon 
     titre professionnel et m'ont valu "les félicitations du jury". Le besoin d'une refonte totale, 
     ainsi que mes nouvelles idées et capacités font que je n'ai pas encore relancé ce service. 
     Côté technique, serveur mutualisé, Php en version 4, base de données Mysql avec du jQuery 
@@ -26,7 +27,8 @@ function tooltips () {
     const tooltipIparglass = document.createElement('p')
     tooltipIparglass.id = `tooltip-iparglass`
     tooltipIparglass.className = `tooltips`
-    tooltipIparglass.textContent = `C'est le dernier site que j'ai réalisé avant ma formation au Greta.
+    tooltipIparglass.innerHTML = `<h2>Iparglass</h2>`
+    tooltipIparglass.innerHTML += `C'est le dernier site que j'ai réalisé avant ma formation au Greta.
     C'est un site vitrine pour l'entreprise de mon voisin, avec formulaire de contact. 
     Je l'ai codé moi-même, sans CMS ni framework. On est sur du php4 pour le formulaire et
     sur du jQuery pour le Dom. Le code est déjà mieux structuré.`
@@ -35,7 +37,8 @@ function tooltips () {
     const tooltipGithub = document.createElement('p')
     tooltipGithub.id = `tooltip-github`
     tooltipGithub.className = `tooltips`
-    tooltipGithub.textContent = `Visitez mon compte github pour voir des exemples de code que j'ai réalisé.
+    tooltipGithub.innerHTML = `<h2>Github</h2>`
+    tooltipGithub.innerHTML += `Visitez mon compte github pour voir des exemples de code que j'ai réalisé.
     Il s'agit en grande partie de travaux pratiques liés à des tutoriaux onlines. Mais également de ce C.V 
     que je réalise avec mes dernières capacités, et de quelques scripts que j'ai codé et sélectionné 
     mais qui ne marcheront pas hors contexte.`
@@ -44,22 +47,25 @@ function tooltips () {
     const tooltipFormation = document.createElement('p')
     tooltipFormation.id = `tooltip-training`
     tooltipFormation.className = `tooltips`
-    tooltipFormation.innerHTML = `Tituliare d'un Bac ES, J'ai débuté ma formation seul en 2012 par 
+    tooltipFormation.innerHTML = `<h2>Formation</h2>`
+    tooltipFormation.innerHTML += `Titulaire d'un Bac ES, J'ai débuté ma formation IT seul en 2012 par 
     l'intermédiaire de tutoriaux online, essentiellement openClassroom. 
     J'ai commencé par apprendre le HTML, avant de passer au Php en procédural et à jQuery, le Javascript natif 
     m'ayant résister au début. J'ai pu réaliser mes différents projets et me rendre compte que j'y "arrivais".`
     tooltipFormation.innerHTML += '<br />'+
     `5 ans plus tard, en 2017, j'ai décidé de faire de ma passion mon métier en me professionnalisant par 
-    l'intermédiaire d'une formation JavaScript au greta de Bayonne. J'y ai revu mes bases et poser des questions
+    l'intermédiaire d'une formation JavaScript au greta de Bayonne. J'y ai revu mes bases et posé des questions
     sur des sujets qui me posaient problèmes. J'ai pu voir comment coder certains professionnels et rencontrer 
     des gens qui partagent la même passion que moi. J'ai également découvert quelques techniques où outils 
-    comme le MVC, l'éditeur VScode, les frameworks, la console ou encore Git et Github.`
+    comme le MVC, l'éditeur VScode, les frameworks, la console ou encore Git et Github.
+    </p>`
 
     // competences
     const tooltipSkills = document.createElement('p')
     tooltipSkills.id = `tooltip-skills`
     tooltipSkills.className = `tooltips`
-    tooltipSkills.innerHTML = `C'est difficile de se juger. Je me suis attribué ces notes en toute 
+    tooltipSkills.innerHTML = `<h2>Compétences</h2>`
+    tooltipSkills.innerHTML += `C'est difficile de se juger. Je me suis attribué ces notes en toute 
     subjectivité et selon mes connaissances. 1 étoile pour "je sais faire des choses mais il reste 
     beaucoup de choses à apprendre". 3 étoiles pour "j'arrive à faire tous ce dont j'ai envie mais 
     je passe trop de temps sur la doc ou les moteurs de recherche", et 5 étoiles quand "on est comme 
@@ -68,7 +74,7 @@ function tooltips () {
     sers pas de SAAS ou LESS.`
     tooltipSkills.innerHTML += '<br />'+
     `Côté technique, je comprend le concept de classe en Php même si je ne l'ai pas beaucoup pratiqué,
-    La compréhension d'Angular et de Silex m'ont fait beaucoup avancé dans la manière de 
+    La compréhension d'Angular et de Silex m'ont fait beaucoup avancer dans la manière de 
     structurer mon code. Je comprend les enjeux du SQL, et je connais les bases du Python et de Git. 
     J'ai pratiqué Photoshop et illustrator pour mes besoins personnels.`
     tooltipSkills.innerHTML += '<br />'+
@@ -87,10 +93,11 @@ function tooltips () {
     const tooltipProfile = document.createElement('p')
     tooltipProfile.id = `tooltip-profile`
     tooltipProfile.className = `tooltips`
-    tooltipProfile.textContent = `Domicilié à Ciboure sur la Côte Basque, je cherche mon premier emploi
+    tooltipProfile.innerHTML = `<h2>Profil</h2>`
+    tooltipProfile.innerHTML += `Domicilié à Ciboure sur la Côte Basque, je cherche mon premier emploi
     de développeur. Vu le manque d'annonces d'emploi IT sur le secteur qui me correspondent, 
     et étant célibataire sans enfant, je me suis décidé à chercher un emploi ailleurs, 
-    et la région Parisienne me parait toute indiquée, en terme de salaire, de nombre d'opportunité, 
+    et la région Parisienne me parait toute indiquée, en terme de salaire, de nombre d'opportunités, 
     et de moyen de retour rapide au pays (avion-train) pour pouvoir voir ma famille. 
     Voilà pourquoi vous avez reçu mon CV.`
 
@@ -98,10 +105,33 @@ function tooltips () {
     const tooltipExperience = document.createElement('p')
     tooltipExperience.id = `tooltip-experience`
     tooltipExperience.className = `tooltips`
-    tooltipExperience.textContent = `Je n'ai pas d'expérience en entreprise IT, mais j'ai des connaissances
+    tooltipExperience.innerHTML = `<h2>Expérience</h2>`
+    tooltipExperience.innerHTML += `Je n'ai pas d'expérience en entreprise IT, mais j'ai des connaissances
     techniques qui me permettent de postuler à votre offre d'emploi. Mon parcours m'a permis 
     d'avoir les qualités nécessaires pour travailler en équipe, et je connais également les principes 
-    de la relation client ainsi que l'analyse de leur besoin.`
+    de la relation client ainsi que l'analyse de leur besoin. Alors c'est sûr que je n'ai jamais fait de 
+    "git fetch", et que je ne sais pas me servir de "Jenkins", mais j'ai fait du "push" et je ne 
+    demande qu'à apprendre. J'ai de plus mener seul chacun de mes petits projets au bout avec plus 
+    ou moins de réussite, qui m'ont qu'en même permis d'acquérir de l'expérience.` 
+    tooltipExperience.innerHTML += '<br />'+ 
+    `Je pense à mon problème d'encodage de caractères, l'espace membre de mon site, entièrement codé par moi-même, 
+    qui ne s'est jamais fait hacké, la migration vers une nouvelle architecture de ma base de données de 1500 membres 
+    avec des scripts SQL entièrement réalisés par moi-même, ma 1ère place sur google pendant 2 ans pour la 
+    requête "contrat de location saisonnière gratuit" avant qu'il ne sanctionne mon espace membre défaillant.
+    Il y a encore des restes sur Bing-Yahoo où je suis encore 6eme, et en 1ere page sur Duck Duck Go... J'ai 
+    également vécu l'arrivée du responsive et compris les enjeux.`
+    tooltipExperience.innerHTML += '<br />'+
+    `Clairement, j'ai fait ce dont j'avais envie
+    avec les outils que je connaissais. Vous vous dites peut-être que ça reste de l'amateurisme, mais lorsque 
+    j'étais 1er sur google pour mon service de contrat innovant pour l'époque sur un secteur porteur, les 9 
+    autres dérrière étaient tout sauf des amateurs, Abritel, Service-public, PAP, seLoger, la guerre des emails ... 
+    Les utilisateurs et les moteurs ont reconnu la valeur de mes efforts.
+    Je vous laisse imaginer ce que j'aurais pu faire de tous ces emails "hyper-qualifiés" comprenant 
+    le détail de leur(s) location(s), si la profession d'agent immobilier n'était pas réglementée en france. 
+    J'allais travailler à l'usine ou au chantier pendant la journée, et je n'avais pas la moitié des connaissances 
+    que j'ai maintenant.`
+    tooltipExperience.innerHTML += '<br /><br />'+
+    `Tout ça pour vous dire que j'ai un peu plus d'expérience que si je sortais seuleument de l'école.`
 
     // papyrus
     const tooltipPapyrus = document.createElement('p')

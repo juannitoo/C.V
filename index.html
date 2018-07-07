@@ -61,7 +61,6 @@
         const papyrus = document.getElementById('papyrus')
         const greenPapyrus = document.getElementById('papyrus-vert')
         const container = document.getElementById('container')
-        let tooltipBooleanVar = false
 
         // responsive papyrus i change papyrus image
         if ( screen.width < 1600  ){
@@ -109,8 +108,6 @@
 
             }, 200);
 
-            tooltipBooleanVar = true
-            return tooltipBooleanVar
         })
 
          // papyrus vert click event       
@@ -154,8 +151,6 @@
                 animObjectReturn(contact)                
                 animObjectReturn(experience)
 
-                tooltipBooleanVar = false
-                return tooltipBooleanVar
             }
         })
 

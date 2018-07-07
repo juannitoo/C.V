@@ -1,13 +1,16 @@
 function tooltipPrint(domElement, tooltipId){
     // this function print the selected tooltip on screen
 
+    
+
+    // mouse over event
     domElement.addEventListener('mouseover', function(event) {
         const tooltipToPrint = document.getElementById(tooltipId)
         let posY = event.clientY
         tooltipToPrint.style.visibility = "visible"
         tooltipToPrint.style.position = "fixed"
         tooltipToPrint.style.left = "20%"
-        tooltipToPrint.style.top = posY+50+"px"
+        tooltipToPrint.style.bottom = "70px"
 
         // this is needed here to have various papyrus tooltip text-content
         let windowScroll = window.scrollY;
@@ -22,7 +25,21 @@ function tooltipPrint(domElement, tooltipId){
             ttPapyrus.style.textAlign = "center";
         }
 
+        // make really better UX with tooltip
+        tooltipToPrint.addEventListener('mouseover', function() {
+            tooltipToPrint.style.visibility = "visible"
+        })
+
+        // mouse out event
+        tooltipToPrint.addEventListener('mouseout', function() {
+            tooltipToPrint.style.visibility = "hidden"
+        })
+
+        //scrolldown souris
+
     })
+
+    
 
     domElement.addEventListener('mouseout', function(event) {
         const tooltipToPrint = document.getElementById(tooltipId)
