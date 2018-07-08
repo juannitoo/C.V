@@ -38,7 +38,7 @@ function tooltips () {
     tooltipGithub.id = `tooltip-github`
     tooltipGithub.className = `tooltips`
     tooltipGithub.innerHTML = `<h2>Github</h2>`
-    tooltipGithub.innerHTML += `Visitez mon compte github pour voir des exemples de code que j'ai réalisé.
+    tooltipGithub.innerHTML += `Visitez mon compte Github pour voir des exemples de code que j'ai réalisé.
     Il s'agit en grande partie de travaux pratiques liés à des tutoriaux onlines. Mais également de ce C.V 
     que je réalise avec mes dernières capacités, et de quelques scripts que j'ai codé et sélectionné 
     mais qui ne marcheront pas hors contexte.`
@@ -124,10 +124,10 @@ function tooltips () {
     `Clairement, j'ai fait ce dont j'avais envie
     avec les outils que je connaissais. Vous vous dites peut-être que ça reste de l'amateurisme, mais lorsque 
     j'étais 1er sur google pour mon service de contrat innovant pour l'époque sur un secteur porteur, les 9 
-    autres dérrière étaient tout sauf des amateurs, Abritel, Service-public, PAP, seLoger, la guerre des emails ... 
+    autres derrière étaient tout sauf des amateurs, Abritel, Service-public, PAP, seLoger, la guerre des emails ... 
     Les utilisateurs et les moteurs ont reconnu la valeur de mes efforts.
     Je vous laisse imaginer ce que j'aurais pu faire de tous ces emails "hyper-qualifiés" comprenant 
-    le détail de leur(s) location(s), si la profession d'agent immobilier n'était pas réglementée en france. 
+    le détail de leur(s) location(s), si la profession d'agent immobilier n'était pas réglementée en France. 
     J'allais travailler à l'usine ou au chantier pendant la journée, et je n'avais pas la moitié des connaissances 
     que j'ai maintenant.`
     tooltipExperience.innerHTML += '<br /><br />'+

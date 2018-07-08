@@ -1,7 +1,6 @@
 function tooltipPrint(domElement, tooltipId){
     // this function print the selected tooltip on screen
 
-    
 
     // mouse over event
     domElement.addEventListener('mouseover', function(event) {
