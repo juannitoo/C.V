@@ -1,7 +1,7 @@
 function training (){
     // i create 'article' and html elements
     const articleTrainig = document.createElement('article')
-    const trainingTitle = document.createElement('h1')
+    const trainingTitle = document.createElement('h3')
     const devDegree = document.createElement('p')
     const jsBayonne = document.createElement('p')
     const tutorial = document.createElement('p')

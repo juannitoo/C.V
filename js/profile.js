@@ -1,7 +1,7 @@
 function profile (){
     // i create 'article' and elements
     const articleProfile = document.createElement('article')
-    const titleProfile = document.createElement('h1')
+    const titleProfile = document.createElement('h3')
     const text = document.createElement('p')
 
     titleProfile.id = `profile-title`

@@ -125,11 +125,7 @@ function tooltips () {
     avec les outils que je connaissais. Vous vous dites peut-être que ça reste de l'amateurisme, mais lorsque 
     j'étais 1er sur google pour mon service de contrat innovant pour l'époque sur un secteur porteur, les 9 
     autres derrière étaient tout sauf des amateurs, Abritel, Service-public, PAP, seLoger, la guerre des emails ... 
-    Les utilisateurs et les moteurs ont reconnu la valeur de mes efforts.
-    Je vous laisse imaginer ce que j'aurais pu faire de tous ces emails "hyper-qualifiés" comprenant 
-    le détail de leur(s) location(s), si la profession d'agent immobilier n'était pas réglementée en France. 
-    J'allais travailler à l'usine ou au chantier pendant la journée, et je n'avais pas la moitié des connaissances 
-    que j'ai maintenant.`
+    Les utilisateurs et les moteurs ont reconnu la valeur de mes efforts.`
     tooltipExperience.innerHTML += '<br /><br />'+
     `Tout ça pour vous dire que j'ai un peu plus d'expérience que si je sortais seuleument de l'école.`
 

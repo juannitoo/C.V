@@ -39,6 +39,7 @@
     <script type="text/javascript" src="js/experience.js"></script>
     <script type="text/javascript" src="js/tooltips/tooltips.js"></script>
     <script type="text/javascript" src="js/tooltips/tooltip-print.js"></script>
+    <script type="text/javascript" src="js/tooltips/anim-h3.js"></script>
 
     <script>
 
@@ -51,7 +52,7 @@
         contact()
         experience()
         viewCv()
-        // not responsive mouseover event
+        // not responsive mouseover event (i think)
         tooltips()
     })
 
@@ -106,8 +107,13 @@
                 animObject(contact)                
                 animObject(experience)
 
-            }, 200);
+                // h3 tootlip anomation
+                setTimeout(() => {
+                    animh3()
+                }, 6500);
 
+            }, 200);
+            
         })
 
          // papyrus vert click event       

@@ -1,7 +1,7 @@
 function contact (){
     // i create contact 'article' and elements
     const articleContact = document.createElement('article')
-    const titleContact = document.createElement('h1')
+    const titleContact = document.createElement('h3')
     const adress = document.createElement('p')
     const adressText = document.createElement('p')
     const phone = document.createElement('p')

@@ -1,7 +1,7 @@
 function experience (){
     // i create 'article' and elements
     const articleExp = document.createElement('article')
-    const expTitle = document.createElement('h1')
+    const expTitle = document.createElement('h3')
     const interim = document.createElement('p')
     const nego = document.createElement('p')
     const commercial = document.createElement('p')

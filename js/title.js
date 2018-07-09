@@ -16,6 +16,7 @@ function title (){
     background.id = "title-background"
 
     // animation fade in && out pour avertissement tooltips
+    // change job text-content
     let click = 0;
     const papyrus = document.getElementById('papyrus')
     papyrus.addEventListener('click', function(){
@@ -27,32 +28,56 @@ function title (){
         // filter touch devices for tootltips "mouseover" event 
         if ( window.matchMedia("(min-width: 992px)").matches && click == 0 ) { 
             
+            // text-content fadeout activation 3600ms
             setTimeout(() => {
                 job.classList.add('anim-fade-out')      
             }, 3600);
 
-            setInterval(() => { 
-                job.classList.remove('anim-fade-out')
+            // iterator to count the interval
+            let iter = 0
+            let interval = setInterval(() => { 
+                iter++
 
-                setTimeout(() => {
-                    if (job.textContent == "développeur web"){
-                        job.classList.add('anim-fade-in')
-                        job.textContent = "Survolez les titres des sections pour avoir plus de détails"
-                        job.style.fontSize = "3em"
-                    } else {            
-                        job.textContent = "développeur web"
-                        job.style.fontSize = "5em"
-                        job.classList.add('anim-fade-in')
+                // four iteration max
+                if ( iter < 5) { 
+                    job.classList.remove('anim-fade-out')
+
+                    // i change textcontent and add/delete fade-in/out css classes
+                    // when needed
+                    setTimeout(() => {
+                        if (job.textContent == "développeur web"){
+                            job.classList.add('anim-fade-in')
+                            job.textContent = "Survolez les titres des sections pour avoir plus de détails"
+                            job.style.fontSize = "3em"
+                        } else {            
+                            job.textContent = "développeur web"
+                            job.style.fontSize = "5em"
+                            job.classList.add('anim-fade-in')
+                        }
+                    }, 400)
+
+                    // 3 first time : normal interval
+                    // 3600ms fade out anim
+                    // at fourth : i stop the interval 
+                    if (iter == 4) {                 
+                        // settimeout to neutralize up setTimeout 400ms 
+                        // to return to normal state and normal animation on papyrus click
+                        setTimeout(() => {
+                            // job.classList.remove('anim-fade-in')
+                        }, 500);
+                        clearInterval(interval)
+
+                    } else {
+                        setTimeout(() => {
+                            job.classList.remove('anim-fade-in')
+                            job.classList.add('anim-fade-out')
+                            
+                        }, 3600);
                     }
-                }, 500)
-
-                setTimeout(() => {
-                    job.classList.remove('anim-fade-in')
-                    job.classList.add('anim-fade-out')
-                    
-                }, 3600);
-                
+                }
+            
             }, 4000)
+
         }
 
     }

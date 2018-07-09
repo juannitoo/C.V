@@ -43,13 +43,21 @@ body{
     top: 1em;
     left: 0;
 }
-
+ /* anim papyrus */ 
 @keyframes marge-anim {
     from {margin-top: -124em;}
     to {margin-top: 0em;}
 }
 
 .animation-marge{
+    -o-animation-name: marge-anim;
+    -o-animation-duration: 1.2s;
+    -moz-animation-name: marge-anim;
+    -moz-animation-duration: 1.2s;
+    -webkit-animation-name: marge-anim;
+    -webkit-animation-duration: 1.2s;
+    -ms-animation-name: marge-anim;
+    -ms-animation-duration: 1.2s;
     animation-name: marge-anim;
     animation-duration: 1.2s;
 }
@@ -60,35 +68,109 @@ body{
 }
 
 .animation-marge2{
+    -o-animation-name: marge-anim-enrouler;
+    -o-animation-duration: 1.2s;
+    -moz-animation-name: marge-anim-enrouler;
+    -moz-animation-duration: 1.2s;
+    -webkit-animation-name: marge-anim-enrouler;
+    -webkit-animation-duration: 1.2s;
+    -ms-animation-name: marge-anim-enrouler;
+    -ms-animation-duration: 1.2s;
     animation-name: marge-anim-enrouler;
     animation-duration: 1.2s;
 }
 
 @keyframes rotation {
-    from {transform: rotateY(180deg);}
-    to {transform: rotateY(0deg);}
+    from {transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);}
+    to {transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            -webkit-transform: rotateY(0deg);
+            -o-transform: rotateY(0deg);}
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
 .animation{
+    -ms-backface-visibility: hidden;
+    -ms-animation-name: rotation;
+    -ms-animation-duration: 2s;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 2s;
+    -moz-backface-visibility: hidden;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 2s;
+    -o-backface-visibility: hidden;
+    -o-animation-name: rotation;
+    -o-animation-duration: 2s;
     backface-visibility: hidden;
     animation-name: rotation;
     animation-duration: 2s;
 }
 
 @keyframes rotation-inverse {
-    from {transform: rotateY(0deg);}
-    to {transform: rotateY(180deg);}
+    from {-ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);}
+    to {transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);}
     from {opacity: 1;}
     to {opacity: 0;}
 }
 
 .animation-rotation-inverse{
+    -moz-backface-visibility: hidden;
+    -moz-animation-name: rotation-inverse;
+    -moz-animation-duration: 1s;
+    -o-backface-visibility: hidden;
+    -o-animation-name: rotation-inverse;
+    -o-animation-duration: 1s;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation-name: rotation-inverse;
+    -webkit-animation-duration: 1s;
+    -ms-backface-visibility: hidden;
+    -ms-animation-name: rotation-inverse;
+    -ms-animation-duration: 1s;
     backface-visibility: hidden;
     animation-name: rotation-inverse;
     animation-duration: 1s;
 }
+
+/* anim h3 */
+@keyframes anim-color {
+    0% {color : rgb(150,150,150);background-color: white;}
+    50%{color: white;background-color: rgb(0,102,51);}
+    100%{color : rgb(150,150,150);background-color: white;}
+}
+
+.anim-color{
+    -moz-animation-name: anim-color;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: 3;
+    -o-animation-name: anim-color;
+    -o-animation-duration: 2s;
+    -o-animation-iteration-count: 3;
+    -webkit-animation-name: anim-color;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 3;
+    -ms-animation-name: anim-color;
+    -ms-animation-duration: 2s;
+    -ms-animation-iteration-count: 3;
+    animation-name: anim-color;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+
 
 /* ------- titre nom ------- */
 @keyframes fade-out {
@@ -97,6 +179,14 @@ body{
 }
 
 .anim-fade-out{
+    -ms-animation-name: fade-out;
+    -ms-animation-duration: 0.5s;
+    -o-animation-name: fade-out;
+    -o-animation-duration: 0.5s;
+    -moz-animation-name: fade-out;
+    -moz-animation-duration: 0.5s;
+    -webkit-animation-name: fade-out;
+    -webkit-animation-duration: 0.5s;
     animation-name: fade-out;
     animation-duration: 0.5s;
 }
@@ -107,6 +197,14 @@ body{
 }
 
 .anim-fade-in{
+    -moz-animation-name: fade-in;
+    -moz-animation-duration: 0.5s;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 0.5s;
+    -o-animation-name: fade-in;
+    -o-animation-duration: 0.5s;
+    -ms-animation-name: fade-in;
+    -ms-animation-duration: 0.5s;
     animation-name: fade-in;
     animation-duration: 0.5s;
 }
@@ -195,15 +293,13 @@ body{
 }
 
 /* -----  tooltip ----- */
-
 .tooltips{
-    /*display: none;*/
     visibility: hidden;
     border: 8px dotted green;
     background-color:rgb(240, 240, 240);
-    width: 60%;
+    width: 80%;
     padding: 1.2em;
-    font-size: 1.5em;
+    font-size: 1.4em;
     z-index: 3;
 }
 

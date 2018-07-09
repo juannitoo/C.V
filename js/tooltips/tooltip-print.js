@@ -8,8 +8,8 @@ function tooltipPrint(domElement, tooltipId){
         let posY = event.clientY
         tooltipToPrint.style.visibility = "visible"
         tooltipToPrint.style.position = "fixed"
-        tooltipToPrint.style.left = "20%"
-        tooltipToPrint.style.bottom = "70px"
+        tooltipToPrint.style.left = "10%"
+        tooltipToPrint.style.bottom = "50px"
 
         // this is needed here to have various papyrus tooltip text-content
         let windowScroll = window.scrollY;
@@ -33,8 +33,6 @@ function tooltipPrint(domElement, tooltipId){
         tooltipToPrint.addEventListener('mouseout', function() {
             tooltipToPrint.style.visibility = "hidden"
         })
-
-        //scrolldown souris
 
     })
 
