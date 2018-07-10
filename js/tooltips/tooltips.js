@@ -116,18 +116,11 @@ function tooltips () {
     tooltipExperience.innerHTML += '<br />'+ 
     `Je pense à mon problème d'encodage de caractères, l'espace membre de mon site, entièrement codé par moi-même, 
     qui ne s'est jamais fait hacké, la migration vers une nouvelle architecture de ma base de données de 1500 membres 
-    avec des scripts SQL entièrement réalisés par moi-même, ma 1ère place sur google pendant 2 ans pour la 
-    requête "contrat de location saisonnière gratuit" avant qu'il ne sanctionne mon espace membre défaillant.
-    Il y a encore des restes sur Bing-Yahoo où je suis encore 6eme, et en 1ere page sur Duck Duck Go... J'ai 
-    également vécu l'arrivée du responsive et compris les enjeux.`
+    avec des scripts SQL entièrement réalisés par moi-même. J'ai également vécu l'arrivée du responsive et compris les enjeux.`
     tooltipExperience.innerHTML += '<br />'+
-    `Clairement, j'ai fait ce dont j'avais envie
-    avec les outils que je connaissais. Vous vous dites peut-être que ça reste de l'amateurisme, mais lorsque 
-    j'étais 1er sur google pour mon service de contrat innovant pour l'époque sur un secteur porteur, les 9 
-    autres derrière étaient tout sauf des amateurs, Abritel, Service-public, PAP, seLoger, la guerre des emails ... 
-    Les utilisateurs et les moteurs ont reconnu la valeur de mes efforts.`
-    tooltipExperience.innerHTML += '<br /><br />'+
-    `Tout ça pour vous dire que j'ai un peu plus d'expérience que si je sortais seuleument de l'école.`
+    `Clairement, j'ai fait ce dont j'avais besoin avec les outils que je connaissais.`
+    tooltipExperience.innerHTML += '<br />'+
+    `Tout ça pour vous dire que j'ai un peu plus d'expérience que si je sortais seulement de l'école.`
 
     // papyrus
     const tooltipPapyrus = document.createElement('p')
