@@ -55,8 +55,8 @@ function tooltips () {
     tooltipFormation.innerHTML += '<br />'+
     `5 ans plus tard, en 2017, j'ai décidé de faire de ma passion mon métier en me professionnalisant par 
     l'intermédiaire d'une formation JavaScript au greta de Bayonne. J'y ai revu mes bases et posé des questions
-    sur des sujets qui me posaient problèmes. J'ai pu voir comment coder certains professionnels et rencontrer 
-    des gens qui partagent la même passion que moi. J'ai également découvert quelques techniques où outils 
+    sur des sujets qui me posaient problèmes. J'ai pu voir comment codaient certains professionnels et rencontrer 
+    des gens qui partagent la même passion que moi. J'ai également découvert quelques techniques ou outils 
     comme le MVC, VScode, les frameworks, la console ou encore Git et Github.
     </p>`
 
@@ -94,26 +94,26 @@ function tooltips () {
     m'ont permis de connaitre le MVC. J'ai utilisé intensément l'ORM de Django à la place du SQL. J'ai 
     été améné à concevoir des évolutions de l'application de la conception à la réalisation.
     J'ai pratiqué Photoshop et illustrator pour mes besoins personnels et je suis meilleur pour faire
-    un fichier xlsx programmatiquent que pour m'en servir.` 
+    un fichier xlsx programmatiquement que pour m'en servir.` 
     tooltipExperience.innerHTML += '<br />'+ 
     `En ce qui concerne le Front-end, en Javascript la formation m'a donné les éléments essentiels. Je peux 
     dire que globalement je peux faire tout ce dont j'ai envie en natif, avec plus ou moins d'effort selon ce 
-    qui est à faire, je connais jQuery et et je sais utilisé les API REST, le Json et des bibliothèques 
+    qui est à faire, je connais jQuery et je sais utiliser les API REST, le Json et des bibliothèques 
     tierces. Je dois encore apprendre les principaux frameworks que je ne connais pas ou peu, Angular 
-    Vuejs et ReactJs. L'essentiel du front-end de l'application utlisée dans mon précédent emploi était 
-    issus de Django et de son modèle MVC appelé MVT (Model View Template), et je suis donc familié à ce 
+    Vuejs et ReactJs. L'essentiel du front-end de l'application utilisée dans mon précédent emploi était 
+    issu de Django et de son modèle MVC appelé MVT (Model View Template), et je suis donc familiarisé à ce 
     type de pattern.`
     tooltipExperience.innerHTML += '<br />'+
     `En ce qui concerne le Back-end en Python avec ou sans Django, j'ai été amené à réaliser des tâches 
     des plus diverses. Création de fichier Excell pour les créanciers à multiples onglets et stylisés, 
     création de graphiques, scrapping, création de scripts d'intégration des datas dans la base de 
-    données SQL, réparer des échanges automatiques quotidien qui n'avait pas été concus par mes soins, 
-    requetes diverses à la base données selon les problèmes du jour, CRUD, veille constante pour vérifier 
+    données SQL, réparer des échanges automatiques quotidiens qui n'avaient pas été concus par mes soins, 
+    requêtes diverses à la base de données selon les problèmes du jour, CRUD, veille constante pour vérifier 
     que le système fonctionne normalement, réalisation de nouveaux outils, nouvelles pages web, 
     intéraction avec des APIs, et je dois encore en oublier beaucoup. Nous n'étions que 2 développeurs 
-    à pourvoir intéragir avec les datas et "la machine", un centre d'appel de recouvrement d'une grosse
-    trentaine de salariés, et nous étions donc parfois seul le temps des congés à pouvoir gérer n'importe 
-    quel problèmes potentiels liés à l'informatique.
+    à pourvoir intéragir avec les datas et "la machine", un centre d'appels de recouvrement d'une grosse
+    trentaine de salariés, et nous étions donc parfois seuls le temps des congés à pouvoir gérer n'importe 
+    quel problème potentiel lié à l'informatique.
     Avec NodeJs, j'ai des connaissances basiques qui me permettent de réaliser actuellement un logiciel 
     de videos en boucle avec le framework ElectronJs pour l'importation-suppression de videos et d'images 
     par l'utilisateur. J'ai quelques connaissances avec ExpressJs. Je sais me servir de npm et 
