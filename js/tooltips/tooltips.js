@@ -50,14 +50,14 @@ function tooltips () {
     tooltipFormation.innerHTML = `<h2>Formation</h2>`
     tooltipFormation.innerHTML += `Titulaire d'un Bac ES, J'ai débuté ma formation IT seul en 2012 par 
     l'intermédiaire de tutoriaux online, essentiellement openClassroom. 
-    J'ai commencé par apprendre le HTML, avant de passer au Php en procédural et à jQuery, le Javascript natif 
-    m'ayant résister au début. J'ai pu réaliser mes différents projets et me rendre compte que j'y "arrivais".`
+    J'ai commencé par apprendre le HTML, avant de passer au Php en procédural et à jQuery. 
+    J'ai pu réaliser mes différents projets et me rendre compte que j'y "arrivais".`
     tooltipFormation.innerHTML += '<br />'+
     `5 ans plus tard, en 2017, j'ai décidé de faire de ma passion mon métier en me professionnalisant par 
     l'intermédiaire d'une formation JavaScript au greta de Bayonne. J'y ai revu mes bases et posé des questions
     sur des sujets qui me posaient problèmes. J'ai pu voir comment coder certains professionnels et rencontrer 
     des gens qui partagent la même passion que moi. J'ai également découvert quelques techniques où outils 
-    comme le MVC, l'éditeur VScode, les frameworks, la console ou encore Git et Github.
+    comme le MVC, VScode, les frameworks, la console ou encore Git et Github.
     </p>`
 
     // competences
@@ -70,35 +70,19 @@ function tooltips () {
     beaucoup de choses à apprendre". 3 étoiles pour "j'arrive à faire tous ce dont j'ai envie mais 
     je passe trop de temps sur la doc ou les moteurs de recherche", et 5 étoiles quand "on est comme 
     sur les videos Youtube de Grafikart, on connait tout par coeur et on peut discuter en même temps". 
-    Je ne me suis pas mis 4 étoiles en HTML-CSS parce que je débute avec Bootstrap, que je ne me 
-    sers pas de SAAS ou LESS.`
-    tooltipSkills.innerHTML += '<br />'+
-    `Côté technique, je comprend le concept de classe en Php même si je ne l'ai pas beaucoup pratiqué,
-    La compréhension d'Angular et de Silex m'ont fait beaucoup avancer dans la manière de 
-    structurer mon code. Je comprend les enjeux du SQL, et je connais les bases du Python et de Git. 
-    J'ai pratiqué Photoshop et illustrator pour mes besoins personnels.`
-    tooltipSkills.innerHTML += '<br />'+
-    `En JavaScript, côté Front-end, la formation m'a donné les éléments essentiels, mais c'est à moi de me
-    perfectionner. Je peux dire que globalement je peux faire tout ce dont j'ai envie en natif, avec plus ou 
-    moins d'effort selon ce qui est à faire, et que je dois encore apprendre les 2 principaux frameworks 
-    que je ne connais pas, Vuejs et ReactJs. Je sais utilisé les API REST, le Json et des bibliothèques 
-    tierces comme sortablesJs.`
-    tooltipSkills.innerHTML += '<br />'+ 
-    `En ce qui concerne le back-end avec NodeJs, j'ai des connaissances basiques qui me permettent de réaliser
-    actuellement un logiciel de videos en boucle avec le framework ElectronJs pour l'importation-suppression 
-    de videos et d'images par l'utilisateur. J'ai quelques connaissances avec ExpressJs acquises lors de la formation.
-    Enfin, je sais me servir de npm et chercher des modules tiers pour les utiliser.`
+    Je ne me suis pas mis 5 étoiles en HTML-CSS car je ne me sers pas de SAAS ou LESS et que je ne 
+    connais pas tout par coeur.`
 
     // profil
     const tooltipProfile = document.createElement('p')
     tooltipProfile.id = `tooltip-profile`
     tooltipProfile.className = `tooltips`
     tooltipProfile.innerHTML = `<h2>Profil</h2>`
-    tooltipProfile.innerHTML += `Domicilié à Ciboure sur la Côte Basque, je cherche mon premier emploi
+    tooltipProfile.innerHTML += `Domicilié à Saint-Jean-de-Luz sur la Côte Basque, je cherche un emploi
     de développeur. Vu le manque d'annonces d'emploi IT sur le secteur qui me correspondent, 
     et étant célibataire sans enfant, je me suis décidé à chercher un emploi ailleurs, 
-    et la région Parisienne me parait toute indiquée, en terme de salaire, de nombre d'opportunités, 
-    et de moyen de retour rapide au pays (avion-train) pour pouvoir voir ma famille. 
+    et la région Parisienne et Genèvoise me paraissent toutes indiquées, en terme de salaire, de nombre 
+    d'opportunités, et de moyen de retour rapide au pays (avion-train) pour pouvoir voir ma famille. 
     Voilà pourquoi vous avez reçu mon CV.`
 
     // experience
@@ -106,21 +90,36 @@ function tooltips () {
     tooltipExperience.id = `tooltip-experience`
     tooltipExperience.className = `tooltips`
     tooltipExperience.innerHTML = `<h2>Expérience</h2>`
-    tooltipExperience.innerHTML += `Je n'ai pas d'expérience en entreprise IT, mais j'ai des connaissances
-    techniques qui me permettent de postuler à votre offre d'emploi. Mon parcours m'a permis 
-    d'avoir les qualités nécessaires pour travailler en équipe, et je connais également les principes 
-    de la relation client ainsi que l'analyse de leur besoin. Alors c'est sûr que je n'ai jamais fait de 
-    "git fetch", et que je ne sais pas me servir de "Jenkins", mais j'ai fait du "push" et je ne 
-    demande qu'à apprendre. J'ai de plus mener seul chacun de mes petits projets au bout avec plus 
-    ou moins de réussite, qui m'ont qu'en même permis d'acquérir de l'expérience.` 
+    tooltipExperience.innerHTML += `Côté technique, 3 ans d'expérience sur le framework Python Django, 
+    m'ont permis de connaitre le MVC. J'ai utilisé intensément l'ORM de Django à la place du SQL. J'ai 
+    été améné à concevoir des évolutions de l'application de la conception à la réalisation.
+    J'ai pratiqué Photoshop et illustrator pour mes besoins personnels et je suis meilleur pour faire
+    un fichier xlsx programmatiquent que pour m'en servir.` 
     tooltipExperience.innerHTML += '<br />'+ 
-    `Je pense à mon problème d'encodage de caractères, l'espace membre de mon site, entièrement codé par moi-même, 
-    qui ne s'est jamais fait hacké, la migration vers une nouvelle architecture de ma base de données de 1500 membres 
-    avec des scripts SQL entièrement réalisés par moi-même. J'ai également vécu l'arrivée du responsive et compris les enjeux.`
+    `En ce qui concerne le Front-end, en Javascript la formation m'a donné les éléments essentiels. Je peux 
+    dire que globalement je peux faire tout ce dont j'ai envie en natif, avec plus ou moins d'effort selon ce 
+    qui est à faire, je connais jQuery et et je sais utilisé les API REST, le Json et des bibliothèques 
+    tierces. Je dois encore apprendre les principaux frameworks que je ne connais pas ou peu, Angular 
+    Vuejs et ReactJs. L'essentiel du front-end de l'application utlisée dans mon précédent emploi était 
+    issus de Django et de son modèle MVC appelé MVT (Model View Template), et je suis donc familié à ce 
+    type de pattern.`
     tooltipExperience.innerHTML += '<br />'+
-    `Clairement, j'ai fait ce dont j'avais besoin avec les outils que je connaissais.`
-    tooltipExperience.innerHTML += '<br />'+
-    `Tout ça pour vous dire que j'ai un peu plus d'expérience que si je sortais seulement de l'école.`
+    `En ce qui concerne le Back-end en Python avec ou sans Django, j'ai été amené à réaliser des tâches 
+    des plus diverses. Création de fichier Excell pour les créanciers à multiples onglets et stylisés, 
+    création de graphiques, scrapping, création de scripts d'intégration des datas dans la base de 
+    données SQL, réparer des échanges automatiques quotidien qui n'avait pas été concus par mes soins, 
+    requetes diverses à la base données selon les problèmes du jour, CRUD, veille constante pour vérifier 
+    que le système fonctionne normalement, réalisation de nouveaux outils, nouvelles pages web, 
+    intéraction avec des APIs, et je dois encore en oublier beaucoup. Nous n'étions que 2 développeurs 
+    à pourvoir intéragir avec les datas et "la machine", un centre d'appel de recouvrement d'une grosse
+    trentaine de salariés, et nous étions donc parfois seul le temps des congés à pouvoir gérer n'importe 
+    quel problèmes potentiels liés à l'informatique.
+    Avec NodeJs, j'ai des connaissances basiques qui me permettent de réaliser actuellement un logiciel 
+    de videos en boucle avec le framework ElectronJs pour l'importation-suppression de videos et d'images 
+    par l'utilisateur. J'ai quelques connaissances avec ExpressJs. Je sais me servir de npm et 
+    chercher des modules tiers pour les utiliser.
+    Enfin j'ai les connaissances de base en Bash et j'utilise WSL.
+    `
 
     // papyrus
     const tooltipPapyrus = document.createElement('p')
