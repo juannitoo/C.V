@@ -9,7 +9,7 @@ function title (){
 
     myName.textContent = `JEAN BALANGUÉ`
     myName.id = "name"
-    job.textContent = `développeur web`
+    job.textContent = `Développeur Full Stack`
     job.id = "job"
     picture.src = "assets/pictures/me.jpg"
     picture.id = "picture"
@@ -45,13 +45,13 @@ function title (){
                     // i change textcontent and add/delete fade-in/out css classes
                     // when needed
                     setTimeout(() => {
-                        if (job.textContent == "développeur web"){
+                        if (job.textContent == "Développeur Full Stack"){
                             job.classList.add('anim-fade-in')
                             job.textContent = "Survolez les titres des sections pour avoir plus de détails"
-                            job.style.fontSize = "3em"
+                            job.style.fontSize = "2.5em"
                         } else {            
-                            job.textContent = "développeur web"
-                            job.style.fontSize = "5em"
+                            job.textContent = "Développeur Full Stack"
+                            job.style.fontSize = "3.5em"
                             job.classList.add('anim-fade-in')
                         }
                     }, 400)

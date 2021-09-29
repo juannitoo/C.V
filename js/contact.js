@@ -20,7 +20,7 @@ function contact (){
     titleContact.textContent = `CONTACT`
     adress.textContent = `ADRESSE`
     // \n is css linked to work "pre-line" 137
-    adressText.textContent = `24 Av françois Mitterrand \n 64500 Ciboure`
+    adressText.textContent = `39 rue Axular, \n 64500 Saint Jean de Luz`
     phone.textContent = `TÉLÉPHONE`
     phoneNumber.textContent = `06 51 21 35 17`
     email.textContent = `EMAIL`

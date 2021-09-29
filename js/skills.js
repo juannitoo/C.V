@@ -47,8 +47,8 @@ function skills (){
     vanilla.textContent = `Vanilla`
     jquery.textContent = `jQuery`
     nodeJs.textContent = `NodeJs Angular`
-    php.textContent = `Php-Sql`
-    python.textContent = `Python`
+    php.textContent = `Php - Sql - Bash - Linux`
+    python.textContent = `Python - Django`
     photoshop.textContent = `Photoshop Illustrator`
     referencement.textContent = `Referencement`
     git.textContent= `Git`
@@ -60,20 +60,20 @@ function skills (){
     const imgNode = document.createElement('img')
     const imgPhp = document.createElement('img')
     const imgPython = document.createElement('img')
+    const imgGit = document.createElement('img')
     const imgPhotoshop = document.createElement('img')
     const imgRef = document.createElement('img')
-    const imgGit = document.createElement('img')
 
-    imgHtml.src = "assets/pictures/3etoiles.png"
-    imgJs.src = "assets/pictures/3etoiles.png"
-    imgVanilla.src = "assets/pictures/3etoiles.png"
-    imgJquery.src = "assets/pictures/3etoiles.png"
-    imgNode.src = "assets/pictures/1etoiles.png"
+    imgHtml.src = "assets/pictures/4etoiles.png"
+    imgJs.src = "assets/pictures/4etoiles.png"
+    imgVanilla.src = "assets/pictures/4etoiles.png"
+    imgJquery.src = "assets/pictures/4etoiles.png"
+    imgNode.src = "assets/pictures/2etoiles.png"
     imgPhp.src = "assets/pictures/2etoiles.png"
-    imgPython.src = "assets/pictures/1etoiles.png"
+    imgPython.src = "assets/pictures/4etoiles.png"
     imgPhotoshop.src = "assets/pictures/2etoiles.png"
     imgRef.src = "assets/pictures/2etoiles.png"
-    imgGit.src = "assets/pictures/1etoiles.png"
+    imgGit.src = "assets/pictures/3etoiles.png"
 
     // bootstrap class and mine
     skillsArticle.className = `col-xs-12 col-md-6 article-skills opacity`
@@ -124,13 +124,17 @@ function skills (){
     rowNode.appendChild(nodeJs)
     rowNode.appendChild(imgNode)
 
-    skillsArticle.appendChild(rowPhp)
-    rowPhp.appendChild(php)
-    rowPhp.appendChild(imgPhp)
-
     skillsArticle.appendChild(rowPython)
     rowPython.appendChild(python)
     rowPython.appendChild(imgPython)
+
+    skillsArticle.appendChild(rowPhp)
+    rowPhp.appendChild(php)
+    rowPhp.appendChild(imgPhp)
+    
+    skillsArticle.appendChild(rowGit)
+    rowGit.appendChild(git)
+    rowGit.appendChild(imgGit)
 
     skillsArticle.appendChild(rowPhotoshop)
     rowPhotoshop.appendChild(photoshop)
@@ -140,8 +144,5 @@ function skills (){
     rowRef.appendChild(referencement)
     rowRef.appendChild(imgRef)
 
-    skillsArticle.appendChild(rowGit)
-    rowGit.appendChild(git)
-    rowGit.appendChild(imgGit)
 
 }
