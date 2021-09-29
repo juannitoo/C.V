@@ -69,9 +69,7 @@
             greenPapyrus.src = "assets/pictures/rouleau-vert-1600px.png"
         }
 
-        // papyrus click event
-        papyrus.addEventListener('click', function(){
-
+        function anim_papyrus_default(){
             // animation papyrus       
             container.classList.add('animation-marge')
             container.classList.remove('marge-hight')
@@ -107,17 +105,26 @@
                 animObject(contact)                
                 animObject(experience)
 
-                // h3 tootlip anomation
+                // h3 tootlip anomation couleur verte
                 setTimeout(() => {
                     animh3()
-                }, 6500);
+                }, 5500);
 
             }, 200);
-            
+        }
+
+        // papyrus click event
+        papyrus.addEventListener('click', function(){
+            anim_papyrus_default()
         })
 
-         // papyrus vert click event       
-         greenPapyrus.addEventListener('click', function(){
+        // animation papyrus par defaut
+        setTimeout(() => {
+            anim_papyrus_default()
+        }, 1200);
+
+        // papyrus vert click event       
+        greenPapyrus.addEventListener('click', function(){
 
             // cancel click when the div is rolled
             if ( container.className === 'container animation-marge' ){
