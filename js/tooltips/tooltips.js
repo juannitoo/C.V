@@ -83,7 +83,9 @@ function tooltips () {
     et étant célibataire sans enfant, je me suis décidé à chercher un emploi ailleurs, 
     et la région Parisienne et Genèvoise me paraissent toutes indiquées, en terme de salaire, de nombre 
     d'opportunités, et de moyen de retour rapide au pays (avion-train) pour pouvoir voir ma famille. 
-    Voilà pourquoi vous avez reçu mon CV.`
+    Voilà pourquoi vous avez reçu mon CV.
+    Pour me décrire en quelques mots, je suis ponctuel, travailleur, d'un naturel souriant, et on peut 
+    dire que je favorise la cohésion dans une équipe.`
 
     // experience
     const tooltipExperience = document.createElement('p')
