@@ -23,6 +23,9 @@ function title (){
         changeJob();
         click++;
     })
+    setTimeout(() => {
+        changeJob();      
+    }, 400);
 
     function changeJob () {
         // filter touch devices for tootltips "mouseover" event 
