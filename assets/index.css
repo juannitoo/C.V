@@ -235,7 +235,7 @@ body{
 
 #job {
     z-index: 2;
-    font-size: 5em;
+    font-size: 3.5em;
     color: white;
 
 }
@@ -245,6 +245,10 @@ body{
 .art-title{
     font-size: 3em;
     color : rgb( 150,150,150);
+}
+
+.art-exp{
+    margin-top: 0.7em;
 }
 
 .art-p{
@@ -268,7 +272,7 @@ body{
 /* -----  skills ----- */
 
 .article-skills{
-    margin-top: 2em;
+    margin-top: 3.5em;
     padding-left: 1em;
 }
 
@@ -276,7 +280,7 @@ body{
 
 .article-training{
     padding-left: 5em;
-    margin-top: -2em;
+    margin-top: 0em;
 }
 
 /* -----  profile ----- */
@@ -289,7 +293,7 @@ body{
 /* -----  contact ----- */
 
 .article-contact {
-    margin-top: -17.8em;
+    margin-top: -21.8em;
 }
 
 /* -----  tooltip ----- */
@@ -380,7 +384,7 @@ body{
 }
 
 .article-training{
-    margin-top: 0em;
+    margin-top: 0.25em;
 }
 
 .article-contact {
