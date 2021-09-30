@@ -48,7 +48,7 @@ function tooltips () {
     tooltipFormation.id = `tooltip-training`
     tooltipFormation.className = `tooltips`
     tooltipFormation.innerHTML = `<h2>Formation</h2>`
-    tooltipFormation.innerHTML += `Titulaire d'un Bac ES, J'ai débuté ma formation IT seul en 2012 par 
+    tooltipFormation.innerHTML += `Titulaire d'un Bac ES, j'ai débuté ma formation IT seul en 2012 par 
     l'intermédiaire de tutoriaux online, essentiellement openClassroom. 
     J'ai commencé par apprendre le HTML, avant de passer au Php en procédural et à jQuery. 
     J'ai pu réaliser mes différents projets et me rendre compte que j'y "arrivais".`
@@ -80,11 +80,11 @@ function tooltips () {
     tooltipProfile.innerHTML = `<h2>Profil</h2>`
     tooltipProfile.innerHTML += `Domicilié à Saint-Jean-de-Luz sur la Côte Basque, je cherche un emploi
     de développeur. Vu le manque d'annonces d'emploi IT qui me correspondent sur le secteur et étant 
-    célibataire sans enfant, je me suis décidé à chercher un emploi ailleurs, et la région Parisienne 
-    et Genèvoise me paraissent toutes indiquées, en termes de salaire, de nombre d'opportunités, et 
-    de moyen de retour rapide au pays (avion-train) pour pouvoir voir ma famille. 
+    célibataire sans enfant, je me suis décidé à chercher un emploi ailleurs et la région Parisienne 
+    et Genevoise me paraissent toutes indiquées, en termes de salaire, de nombres d'opportunités et 
+    de moyen de retour rapide au pays (avion-train) afin de voir ma famille. 
     Voilà pourquoi vous avez reçu mon CV.
-    Pour me décrire en quelques mots, je suis ponctuel, travailleur, d'un naturel souriant, et on peut 
+    Pour me décrire en quelques mots, je suis ponctuel, travailleur, d'un naturel souriant et on peut 
     dire que je favorise la cohésion dans une équipe.`
 
     // experience
