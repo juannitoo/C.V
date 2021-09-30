@@ -79,10 +79,10 @@ function tooltips () {
     tooltipProfile.className = `tooltips`
     tooltipProfile.innerHTML = `<h2>Profil</h2>`
     tooltipProfile.innerHTML += `Domicilié à Saint-Jean-de-Luz sur la Côte Basque, je cherche un emploi
-    de développeur. Vu le manque d'annonces d'emploi IT sur le secteur qui me correspondent, 
-    et étant célibataire sans enfant, je me suis décidé à chercher un emploi ailleurs, 
-    et la région Parisienne et Genèvoise me paraissent toutes indiquées, en terme de salaire, de nombre 
-    d'opportunités, et de moyen de retour rapide au pays (avion-train) pour pouvoir voir ma famille. 
+    de développeur. Vu le manque d'annonces d'emploi IT qui me correspondent sur le secteur et étant 
+    célibataire sans enfant, je me suis décidé à chercher un emploi ailleurs, et la région Parisienne 
+    et Genèvoise me paraissent toutes indiquées, en termes de salaire, de nombre d'opportunités, et 
+    de moyen de retour rapide au pays (avion-train) pour pouvoir voir ma famille. 
     Voilà pourquoi vous avez reçu mon CV.
     Pour me décrire en quelques mots, je suis ponctuel, travailleur, d'un naturel souriant, et on peut 
     dire que je favorise la cohésion dans une équipe.`
@@ -107,14 +107,14 @@ function tooltips () {
     type de pattern.`
     tooltipExperience.innerHTML += '<br />'+
     `En ce qui concerne le Back-end en Python avec ou sans Django, j'ai été amené à réaliser des tâches 
-    des plus diverses. Création de fichier Excell pour les créanciers à multiples onglets et stylisés, 
+    des plus diverses. Création de fichier Excel pour les créanciers à multiples onglets et stylisés, 
     création de graphiques, scrapping, création de scripts d'intégration des datas dans la base de 
     données SQL, réparer des échanges automatiques quotidiens qui n'avaient pas été concus par mes soins, 
     requêtes diverses à la base de données selon les problèmes du jour, CRUD, veille constante pour vérifier 
     que le système fonctionne normalement, réalisation de nouveaux outils, nouvelles pages web, 
     intéraction avec des APIs, et je dois encore en oublier beaucoup. Nous n'étions que 2 développeurs 
-    à pourvoir intéragir avec les datas et "la machine", un centre d'appels de recouvrement d'une grosse
-    trentaine de salariés, et nous étions donc parfois seuls le temps des congés à pouvoir gérer n'importe 
+    à pouvoir intéragir avec les datas et "la machine", un centre d'appels de recouvrement d'une grosse
+    trentaine de salariés, et nous étions donc parfois seuls le temps des congés à gérer n'importe 
     quel problème potentiel lié à l'informatique.
     Avec NodeJs, j'ai des connaissances basiques qui me permettent de réaliser actuellement un logiciel 
     de videos en boucle avec le framework ElectronJs pour l'importation-suppression de videos et d'images 
