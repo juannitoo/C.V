@@ -7,5 +7,7 @@
 * animation façon papyrus à dérouler au click
 * Tooltips
 
-#### Pour l'afficher, il faut cloner / télécharger le dossier et lancer index.html
+#### Pour l'afficher, il faut cloner / télécharger le dossier et lancer index.html ou cliquer ici : https://juannitoo.github.io/C.V/
+
+
 
