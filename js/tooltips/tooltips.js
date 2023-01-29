@@ -5,7 +5,7 @@ function tooltips() {
     const tooltipStJean = document.createElement('div')
     tooltipStJean.id = `tooltip-st-jean`
     tooltipStJean.className = `tooltips`
-    tooltipStJean.innerHTML = `<h2>locationsaintjeandeluz</h2>`
+    tooltipStJean.innerHTML = `<h2><a href="www.locationsaintjeandeluz.fr">locationsaintjeandeluz</a></h2>`
     tooltipStJean.innerHTML += `C'est le premier site que j'ai réalisé en 2013, 
     et qui permet à n'importe quel francophone de générer un contrat de location 
     saisonnière via mon template. Ce site m'aura fait connaître les parties back-end et 
@@ -27,7 +27,7 @@ function tooltips() {
     const tooltipIparglass = document.createElement('p')
     tooltipIparglass.id = `tooltip-iparglass`
     tooltipIparglass.className = `tooltips`
-    tooltipIparglass.innerHTML = `<h2>Iparglass</h2>`
+    tooltipIparglass.innerHTML = `<h2><a href="www.iparglass.fr">Iparglass</a></h2>`
     tooltipIparglass.innerHTML += `C'est le dernier site que j'ai réalisé avant ma formation au Greta.
     C'est un site vitrine pour l'entreprise de mon voisin, avec formulaire de contact. 
     Je l'ai codé moi-même, sans CMS ni framework. On est sur du php4 pour le formulaire et
@@ -37,7 +37,7 @@ function tooltips() {
     const tooltipGithub = document.createElement('p')
     tooltipGithub.id = `tooltip-github`
     tooltipGithub.className = `tooltips`
-    tooltipGithub.innerHTML = `<h2>Github</h2>`
+    tooltipGithub.innerHTML = `<h2><a href="https://github.com/juannitoo">Github</a></h2>`
     tooltipGithub.innerHTML += `Visitez mon compte Github pour voir des exemples de code que j'ai réalisé.
     Il s'agit en grande partie de travaux pratiques liés à des tutoriaux onlines. Mais également de ce C.V 
     que je réalise avec mes dernières capacités, et de quelques scripts que j'ai codé et sélectionné 
