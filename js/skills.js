@@ -66,6 +66,7 @@ function skills() {
 
     imgHtml.src = "assets/pictures/4etoiles.png"
     imgJs.src = "assets/pictures/3etoiles.png"
+
     imgVanilla.src = "assets/pictures/4etoiles.png"
     imgJquery.src = "assets/pictures/4etoiles.png"
     imgNode.src = "assets/pictures/2etoiles.png"
@@ -74,6 +75,7 @@ function skills() {
     imgGitlab.src = "assets/pictures/2etoiles.png"
     imgCiCd.src = "assets/pictures/2etoiles.png"
     imgGit.src = "assets/pictures/3etoiles.png"
+
 
     // bootstrap class and mine
     skillsArticle.className = `col-xs-12 col-md-6 article-skills opacity`
