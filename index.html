@@ -4,9 +4,10 @@
 - - - - - - - - - - - - - - - - - - - - - - -  -->
 <!doctype html>
 <html lang="fr">
+
 <head>
-  	<meta charset="utf-8">
-	<title>Mon C.V </title>
+    <meta charset="utf-8">
+    <title>Mon C.V </title>
     <link rel="stylesheet" href="assets/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- comptibilité IE bootstrap -->
@@ -16,10 +17,8 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" 
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body style="font-family:'candara', 'Times New Roman', sans-serif; 
@@ -28,7 +27,7 @@
     <div class="container marge-hight" id="container"></div>
     <div><img id="papyrus-vert" src="assets/pictures/rouleau-vert.png" /></div>
     <div><img id="background-gray" src="assets/pictures/fond-gris-haut.png" /> </div>
-    <div><img  id="papyrus" src="assets/pictures/rouleau.png" /> </div>
+    <div><img id="papyrus" src="assets/pictures/rouleau.png" /> </div>
 
 
     <script type="text/javascript" src="js/title.js"></script>
@@ -43,168 +42,169 @@
 
     <script>
 
-    // append element when html document is ready
-    document.addEventListener('DOMContentLoaded', function(){
-        title()
-        skills()  
-        profile()
-        experience()
-        contact()
-        training()
-        viewCv()
-        // not responsive mouseover event (i think)
-        tooltips()
-    })
-
-    // launch papyrus animation
-    function viewCv (){
-
-        const papyrus = document.getElementById('papyrus')
-        const greenPapyrus = document.getElementById('papyrus-vert')
-        const container = document.getElementById('container')
-
-        // responsive papyrus i change papyrus image
-        if ( screen.width < 1600  ){
-            papyrus.src = "assets/pictures/rouleau-1600px.png"
-            greenPapyrus.src = "assets/pictures/rouleau-vert-1600px.png"
-        }
-
-        function anim_papyrus_default(){
-            // animation papyrus       
-            container.classList.add('animation-marge')
-            container.classList.remove('marge-hight')
-            // for the "undo"
-            container.classList.remove('animation-marge2')
-            
-            // this fonction will anim each dom object when unroll start
-            function animObject(domElement){
-                domElement.classList.add('animation')
-                domElement.classList.remove('animation-rotation-inverse')
-                domElement.classList.remove('opacity')
-            }
-            
-            setTimeout(() => {
-                // opacity and rotation animations
-                // for title
-                const picture = document.getElementById('picture')
-                const myName = document.getElementById('name')
-                const job = document.getElementById('job')
-                animObject(picture)              
-                animObject(myName)             
-                animObject(job)
-                
-                // each "object"
-                const skills = document.getElementById('skills')
-                const formation = document.getElementById('formation')
-                const profile = document.getElementById('profile')
-                const contact = document.getElementById('contact')
-                const experience = document.getElementById('experience')
-                animObject(skills)                
-                animObject(formation)                
-                animObject(profile)               
-                animObject(contact)                
-                animObject(experience)
-
-                // h3 tootlip anomation couleur verte
-                setTimeout(() => {
-                    animh3()
-                }, 5500);
-
-            }, 200);
-        }
-
-        // papyrus click event
-        papyrus.addEventListener('click', function(){
-            anim_papyrus_default()
+        // append element when html document is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            title()
+            skills()
+            profile()
+            contact()
+            experience()
+            training()
+            viewCv()
+            // not responsive mouseover event (i think)
+            tooltips()
         })
 
-        // animation papyrus par defaut
-        setTimeout(() => {
-            anim_papyrus_default()
-        }, 1200);
+        // launch papyrus animation
+        function viewCv() {
 
-        // papyrus vert click event       
-        greenPapyrus.addEventListener('click', function(){
+            const papyrus = document.getElementById('papyrus')
+            const greenPapyrus = document.getElementById('papyrus-vert')
+            const container = document.getElementById('container')
 
-            // cancel click when the div is rolled
-            if ( container.className === 'container animation-marge' ){
+            // responsive papyrus i change papyrus image
+            if (screen.width < 1600) {
+                papyrus.src = "assets/pictures/rouleau-1600px.png"
+                greenPapyrus.src = "assets/pictures/rouleau-vert-1600px.png"
+            }
 
-                // undo the rotation animation
-                function animObjectReturn(domElement){
-                    domElement.classList.remove('animation')
-                    domElement.classList.add('animation-rotation-inverse')
-                    domElement.classList.add('opacity')
+            function anim_papyrus_default() {
+                // animation papyrus       
+                container.classList.add('animation-marge')
+                container.classList.remove('marge-hight')
+                // for the "undo"
+                container.classList.remove('animation-marge2')
+
+                // this fonction will anim each dom object when unroll start
+                function animObject(domElement) {
+                    domElement.classList.add('animation')
+                    domElement.classList.remove('animation-rotation-inverse')
+                    domElement.classList.remove('opacity')
                 }
 
-                // animation papyrus
                 setTimeout(() => {
-                    container.classList.remove('animation-marge')
-                    container.classList.add('animation-marge2')
-                    container.classList.add('marge-hight')
-                }, 500);
-                
-                // opacity and rotation animation
-                // for title
-                const picture = document.getElementById('picture')
-                const myName = document.getElementById('name')
-                const job = document.getElementById('job')
-                animObjectReturn(picture)              
-                animObjectReturn(myName)             
-                animObjectReturn(job)
-                
-                // each "object"
-                const skills = document.getElementById('skills')
-                const formation = document.getElementById('formation')
-                const profile = document.getElementById('profile')
-                const contact = document.getElementById('contact')
-                const experience = document.getElementById('experience')
-                animObjectReturn(skills)                
-                animObjectReturn(formation)                
-                animObjectReturn(profile)               
-                animObjectReturn(contact)                
-                animObjectReturn(experience)
+                    // opacity and rotation animations
+                    // for title
+                    const picture = document.getElementById('picture')
+                    const myName = document.getElementById('name')
+                    const job = document.getElementById('job')
+                    animObject(picture)
+                    animObject(myName)
+                    animObject(job)
 
+                    // each "object"
+                    const skills = document.getElementById('skills')
+                    const formation = document.getElementById('formation')
+                    const profile = document.getElementById('profile')
+                    const contact = document.getElementById('contact')
+                    const experience = document.getElementById('experience')
+                    animObject(skills)
+                    animObject(formation)
+                    animObject(profile)
+                    animObject(contact)
+                    animObject(experience)
+
+                    // h3 tootlip anomation couleur verte
+                    setTimeout(() => {
+                        animh3()
+                    }, 5500);
+
+                }, 200);
             }
-        })
 
-        // ----------  tooltips  ------------------
-        // not responsive mouseover event
+            // papyrus click event
+            papyrus.addEventListener('click', function () {
+                anim_papyrus_default()
+            })
 
-        // contact
-        // loc st jean
-        const webText1 = document.getElementById('loc-st-jean')
-        tooltipPrint(webText1, 'tooltip-st-jean')
+            // animation papyrus par defaut
+            setTimeout(() => {
+                anim_papyrus_default()
+            }, 1200);
 
-        // iparglass
-        const webText2 = document.getElementById('iparglass')
-        tooltipPrint(webText2, 'tooltip-iparglass')
+            // papyrus vert click event       
+            greenPapyrus.addEventListener('click', function () {
 
-        // github
-        const webText3 = document.getElementById('github')
-        tooltipPrint(webText3, 'tooltip-github')
+                // cancel click when the div is rolled
+                if (container.className === 'container animation-marge') {
 
-        // formation
-        const training = document.getElementById('training')
-        tooltipPrint(training, 'tooltip-training')
+                    // undo the rotation animation
+                    function animObjectReturn(domElement) {
+                        domElement.classList.remove('animation')
+                        domElement.classList.add('animation-rotation-inverse')
+                        domElement.classList.add('opacity')
+                    }
 
-        // competences
-        const skills = document.getElementById('skills-title')
-        tooltipPrint(skills, 'tooltip-skills')
+                    // animation papyrus
+                    setTimeout(() => {
+                        container.classList.remove('animation-marge')
+                        container.classList.add('animation-marge2')
+                        container.classList.add('marge-hight')
+                    }, 500);
 
-        // profil
-        const profile = document.getElementById('profile-title')
-        tooltipPrint(profile, 'tooltip-profile')
+                    // opacity and rotation animation
+                    // for title
+                    const picture = document.getElementById('picture')
+                    const myName = document.getElementById('name')
+                    const job = document.getElementById('job')
+                    animObjectReturn(picture)
+                    animObjectReturn(myName)
+                    animObjectReturn(job)
 
-        // experience
-        const experienceTitle = document.getElementById('experience-title')
-        tooltipPrint(experienceTitle, 'tooltip-experience')
+                    // each "object"
+                    const skills = document.getElementById('skills')
+                    const formation = document.getElementById('formation')
+                    const profile = document.getElementById('profile')
+                    const contact = document.getElementById('contact')
+                    const experience = document.getElementById('experience')
+                    animObjectReturn(skills)
+                    animObjectReturn(formation)
+                    animObjectReturn(profile)
+                    animObjectReturn(contact)
+                    animObjectReturn(experience)
 
-        // tooltip papyrus
-        tooltipPrint(papyrus, 'tooltip-papyrus')
+                }
+            })
 
-    }
+            // ----------  tooltips  ------------------
+            // not responsive mouseover event
+
+            // contact
+            // loc st jean
+            const webText1 = document.getElementById('loc-st-jean')
+            tooltipPrint(webText1, 'tooltip-st-jean')
+
+            // iparglass
+            const webText2 = document.getElementById('iparglass')
+            tooltipPrint(webText2, 'tooltip-iparglass')
+
+            // github
+            const webText3 = document.getElementById('github')
+            tooltipPrint(webText3, 'tooltip-github')
+
+            // formation
+            const training = document.getElementById('training')
+            tooltipPrint(training, 'tooltip-training')
+
+            // competences
+            const skills = document.getElementById('skills-title')
+            tooltipPrint(skills, 'tooltip-skills')
+
+            // profil
+            const profile = document.getElementById('profile-title')
+            tooltipPrint(profile, 'tooltip-profile')
+
+            // experience
+            const experienceTitle = document.getElementById('experience-title')
+            tooltipPrint(experienceTitle, 'tooltip-experience')
+
+            // tooltip papyrus
+            tooltipPrint(papyrus, 'tooltip-papyrus')
+
+        }
 
     </script>
 
 </body>
+
 </html>

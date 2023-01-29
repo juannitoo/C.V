@@ -1,55 +1,62 @@
-body{
+body {
     padding-top: 2em;
     /* for smooth animation 1920x1080 */
-    padding-bottom : 60em;
+    padding-bottom: 60em;
 }
 
-#container{
+#container {
     background-color: white;
     padding: 0em 0 15em 0;
 
 }
 
-#background-gray{
-    z-index:1;
-    width:100%;
+#background-gray {
+    z-index: 1;
+    width: 100%;
     position: absolute;
     top: -2em;
     left: 0;
 }
 
-.marge-hight{
+.marge-hight {
     margin-top: -124em;
 }
 
-.marge-initial{
+.marge-initial {
     margin-top: 0em;
 }
 
-#papyrus{
-    width:100%;
+#papyrus {
+    width: 100%;
     margin-left: 0%;
     margin-top: -2em;
 }
 
-#papyrus:hover, #papyrus-vert:hover{
+#papyrus:hover,
+#papyrus-vert:hover {
     cursor: pointer;
 }
 
-#papyrus-vert{
-    z-index:2;
-    width:100%;
+#papyrus-vert {
+    z-index: 2;
+    width: 100%;
     position: absolute;
     top: 1em;
     left: 0;
 }
- /* anim papyrus */ 
+
+/* anim papyrus */
 @keyframes marge-anim {
-    from {margin-top: -124em;}
-    to {margin-top: 0em;}
+    from {
+        margin-top: -124em;
+    }
+
+    to {
+        margin-top: 0em;
+    }
 }
 
-.animation-marge{
+.animation-marge {
     -o-animation-name: marge-anim;
     -o-animation-duration: 1.2s;
     -moz-animation-name: marge-anim;
@@ -63,11 +70,16 @@ body{
 }
 
 @keyframes marge-anim-enrouler {
-    from {margin-top: 0em;}
-    to {margin-top: -124em;}
+    from {
+        margin-top: 0em;
+    }
+
+    to {
+        margin-top: -124em;
+    }
 }
 
-.animation-marge2{
+.animation-marge2 {
     -o-animation-name: marge-anim-enrouler;
     -o-animation-duration: 1.2s;
     -moz-animation-name: marge-anim-enrouler;
@@ -81,21 +93,32 @@ body{
 }
 
 @keyframes rotation {
-    from {transform: rotateY(180deg);
-            -ms-transform: rotateY(180deg);
-            -moz-transform: rotateY(180deg);
-            -webkit-transform: rotateY(180deg);
-            -o-transform: rotateY(180deg);}
-    to {transform: rotateY(0deg);
-            -ms-transform: rotateY(0deg);
-            -moz-transform: rotateY(0deg);
-            -webkit-transform: rotateY(0deg);
-            -o-transform: rotateY(0deg);}
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+    }
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-.animation{
+.animation {
     -ms-backface-visibility: hidden;
     -ms-animation-name: rotation;
     -ms-animation-duration: 2s;
@@ -114,21 +137,32 @@ body{
 }
 
 @keyframes rotation-inverse {
-    from {-ms-transform: rotateY(0deg);
+    from {
+        -ms-transform: rotateY(0deg);
         -webkit-transform: rotateY(0deg);
         -moz-transform: rotateY(0deg);
         -o-transform: rotateY(0deg);
-        transform: rotateY(0deg);}
-    to {transform: rotateY(180deg);
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(180deg);
         -ms-transform: rotateY(180deg);
         -o-transform: rotateY(180deg);
         -webkit-transform: rotateY(180deg);
-        -moz-transform: rotateY(180deg);}
-    from {opacity: 1;}
-    to {opacity: 0;}
+        -moz-transform: rotateY(180deg);
+    }
+
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
-.animation-rotation-inverse{
+.animation-rotation-inverse {
     -moz-backface-visibility: hidden;
     -moz-animation-name: rotation-inverse;
     -moz-animation-duration: 1s;
@@ -148,12 +182,23 @@ body{
 
 /* anim h3 */
 @keyframes anim-color {
-    0% {color : rgb(150,150,150);background-color: white;}
-    50%{color: white;background-color: rgb(0,102,51);}
-    100%{color : rgb(150,150,150);background-color: white;}
+    0% {
+        color: rgb(150, 150, 150);
+        background-color: white;
+    }
+
+    50% {
+        color: white;
+        background-color: rgb(0, 102, 51);
+    }
+
+    100% {
+        color: rgb(150, 150, 150);
+        background-color: white;
+    }
 }
 
-.anim-color{
+.anim-color {
     -moz-animation-name: anim-color;
     -moz-animation-duration: 2s;
     -moz-animation-iteration-count: 3;
@@ -174,11 +219,16 @@ body{
 
 /* ------- titre nom ------- */
 @keyframes fade-out {
-    from {opacity: 1;}
-    to {opacity: 0;}
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
-.anim-fade-out{
+.anim-fade-out {
     -ms-animation-name: fade-out;
     -ms-animation-duration: 0.5s;
     -o-animation-name: fade-out;
@@ -192,11 +242,16 @@ body{
 }
 
 @keyframes fade-in {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-.anim-fade-in{
+.anim-fade-in {
     -moz-animation-name: fade-in;
     -moz-animation-duration: 0.5s;
     -webkit-animation-name: fade-in;
@@ -209,20 +264,20 @@ body{
     animation-duration: 0.5s;
 }
 
-#title-background{
+#title-background {
     z-index: 1;
     width: 100%;
     height: 500px;
     background: url('../assets/pictures/background.png');
 }
 
-#picture{
+#picture {
     z-index: 2;
     width: 17%;
     margin: 10em 6em 0 5em;
 }
 
-.opacity{
+.opacity {
     opacity: 0;
 }
 
@@ -242,18 +297,18 @@ body{
 
 /* -----  article ----- */
 
-.art-title{
+.art-title {
     font-size: 3em;
-    color : rgb( 150,150,150);
+    color: rgb(150, 150, 150);
 }
 
-.art-exp{
+.art-exp {
     margin-top: 0.7em;
 }
 
-.art-p{
+.art-p {
     font-size: 2em;
-    color : rgb( 150,150,150);
+    color: rgb(150, 150, 150);
 }
 
 .pre-line {
@@ -261,46 +316,46 @@ body{
     line-height: 31px;
 }
 
-.margin-plus{
-    margin-top : 3%;
+.margin-plus {
+    margin-top: 3%;
 }
 
-.margin-moins{
-    margin-top : -3%;
+.margin-moins {
+    margin-top: -3%;
 }
 
 /* -----  skills ----- */
 
-.article-skills{
+.article-skills {
     margin-top: 3.5em;
     padding-left: 1em;
 }
 
 /* -----  training ----- */
 
-.article-training{
+.article-training {
     padding-left: 5em;
     margin-top: 0em;
 }
 
 /* -----  profile ----- */
 
-.text-p{
+.text-p {
     line-height: 32px;
     width: 90%;
 }
 
 /* -----  contact ----- */
 
-.article-contact {
-    margin-top: -21.8em;
+#formation {
+    margin-bottom: -5em;
 }
 
 /* -----  tooltip ----- */
-.tooltips{
+.tooltips {
     visibility: hidden;
     border: 8px dotted green;
-    background-color:rgb(240, 240, 240);
+    background-color: rgb(240, 240, 240);
     width: 80%;
     padding: 1.2em;
     font-size: 1.4em;
@@ -312,157 +367,160 @@ body{
 ------------------------------------ */
 
 
-@media(max-width:1600px){
+@media(max-width:1600px) {
 
-.marge-hight{
-    margin-top: -120em;
-}
-
-}
-
-@media(max-width:1200px){
-
-.marge-hight{
-    margin-top: -140em;
-}
-
-#picture{
-    z-index: 2;
-    width: 20%;
-    margin: 10em 1em 0 5em;
-}
-
-#name {
-    z-index: 2;
-    font-size: 5em;
-    color: white;
-    margin-top: 2em;
-}
-
-#job {
-    z-index: 2;
-    font-size: 4em;
-    color: white;
-}
+    .marge-hight {
+        margin-top: -120em;
+    }
 
 }
 
-@media(max-width:991px){
+@media(max-width:1200px) {
 
-.art-p{
-    font-size: 1.5em;
-    color : rgb( 150,150,150);
+    .marge-hight {
+        margin-top: -140em;
+    }
+
+    #picture {
+        z-index: 2;
+        width: 20%;
+        margin: 10em 1em 0 5em;
+    }
+
+    #name {
+        z-index: 2;
+        font-size: 5em;
+        color: white;
+        margin-top: 2em;
+    }
+
+    #job {
+        z-index: 2;
+        font-size: 4em;
+        color: white;
+    }
+
 }
 
-.marge-hight{
-    margin-top: -200em;
+@media(max-width:991px) {
+
+    .art-p {
+        font-size: 1.5em;
+        color: rgb(150, 150, 150);
+    }
+
+    .marge-hight {
+        margin-top: -200em;
+    }
+
+    #picture {
+        width: 30%;
+        margin: 6em 1em 0 5em;
+    }
+
+    #name {
+        font-size: 3em;
+        color: white;
+        margin-top: 3em;
+    }
+
+    #job {
+        font-size: 2.5em;
+        color: white;
+    }
+
+    .pre-line {
+        white-space: pre-line;
+        line-height: 38px;
+    }
+
+    .margin-moins {
+        margin-top: 0%;
+    }
+
+    .article-training {
+        margin-top: 0.25em;
+    }
+
+    .article-contact {
+        margin-top: 0em;
+    }
+
+    .art-title {
+        margin-top: 1em;
+    }
 }
 
-#picture{
-    width: 30%;
-    margin: 6em 1em 0 5em;
+@media(max-width:768px) {
+
+    #container {
+        width: 94%;
+        margin-left: 2.5%
+    }
+
+    #background-gray {
+        z-index: 1;
+        width: 100%;
+        position: absolute;
+        top: 0em;
+        left: 0;
+    }
+
+    #picture {
+        width: 35%;
+        margin: 6em 0 0 31%;
+    }
+
+    #name {
+        font-size: 2.5em;
+        color: white;
+        margin: 1em 0 0 1em;
+        ;
+    }
+
+    #job {
+        font-size: 2.5em;
+        color: white;
+    }
 }
 
-#name {
-    font-size: 3em;
-    color: white;
-    margin-top: 3em;
-}
-
-#job {
-    font-size: 2.5em;
-    color: white;
-}
-
-.pre-line {
-    white-space: pre-line;
-    line-height: 38px;
-}
-
-.margin-moins{
-    margin-top : 0%;
-}
-
-.article-training{
-    margin-top: 0.25em;
-}
-
-.article-contact {
-    margin-top: 0em;
-}
-
-.art-title{
-    margin-top: 1em;
-}
-}
-
-@media(max-width:768px){
-
-#container{
-    width:94%;
-    margin-left: 2.5%
-}
-
-#background-gray{
-    z-index:1;
-    width:100%;
-    position: absolute;
-    top: 0em;
-    left: 0;
-}
-
-#picture{
-    width: 35%;
-    margin: 6em 0 0 31%;
-}
-
-#name {
-    font-size: 2.5em;
-    color: white;
-    margin: 1em 0 0 1em;;
-}
-
-#job {
-    font-size: 2.5em;
-    color: white;
-}
-}
-
-@media(max-width:560px){
-    .marge-hight{
+@media(max-width:560px) {
+    .marge-hight {
         margin-top: -210em;
     }
 }
 
-@media(max-width:480px){
-    .marge-hight{
+@media(max-width:480px) {
+    .marge-hight {
         margin-top: -220em;
     }
 }
 
-@media(max-width:425px){
-    .marge-hight{
+@media(max-width:425px) {
+    .marge-hight {
         margin-top: -229em;
     }
 }
 
-@media(max-width:375px){
-    .marge-hight{
+@media(max-width:375px) {
+    .marge-hight {
         margin-top: -238em;
     }
 }
 
-@media(min-width:2000px){
-    .marge-hight{
+@media(min-width:2000px) {
+    .marge-hight {
         margin-top: -120em;
     }
-    #background-gray{
+
+    #background-gray {
         position: absolute;
         top: -5em;
         left: 0;
     }
-    #container{
+
+    #container {
         padding: 6.75em 0 15em 0;
-    
+
     }
 }

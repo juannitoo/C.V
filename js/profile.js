@@ -1,4 +1,4 @@
-function profile (){
+function profile() {
     // i create 'article' and elements
     const articleProfile = document.createElement('article')
     const titleProfile = document.createElement('h3')
@@ -6,21 +6,8 @@ function profile (){
 
     titleProfile.id = `profile-title`
     titleProfile.textContent = `PROFIL`
-    // text.textContent = `Agé de 38 ans, j’ai été intéressé par le 
-    // développement informatique sur le tard, 
-    // j’ai  réalisé une formation au Greta afin de 
-    // me professionnaliser. J’ai, entre autres,  
-    // été initié à l’architecture MVC,  Node.js, 
-    // et à l’utilisation  d’outils comme Git. 
-    // A la suite de la formation, j’ai réalisé des 
-    // tutoriaux sur le framework Php Silex ainsi 
-    // que sur le langage Python pour découvrir
-    // d’autres outils. Je réalise également 
-    // un logiciel en JavaScript avec Electron.js .
-    // Je souhaite maintenant acquérir ma 
-    // première expérience professionnelle en 
-    // tant que développeur.`
-    text.textContent =`Agé de 41 ans, j’ai été intéressé par le 
+
+    text.textContent = `Agé de 42 ans, j’ai été intéressé par le 
     développement informatique sur le tard, et
     j’ai réalisé une formation au Greta afin de 
     valider mes acquis. J’ai ensuite travaillé
@@ -28,9 +15,12 @@ function profile (){
     où nous étions 2 développeurs, et où 
     j'ai utilisé Python, Django, Javascript 
     et Bash quotidiennement pour maintenir et enrichir
-    l'application mise à disposition des gestionnaires
-    et des créanciers. Application web entièrement créé 
-    en interne avec une très grosse base de données SQL.`
+    l'ERP mise à disposition des gestionnaires
+    et des créanciers, entièrement créé 
+    en interne avec une grosse base de données SQL.
+    Suite à ça, j'ai entrepris une formation DevOps 
+    à l'ESTIA Bidart, puis j'ai suivi les formations 
+    AdminSys et Angular d'Openclassrooms.`
 
     // bootstrap CSS class
     articleProfile.className = `col-xs-11 col-xs-offset-1 col-md-offset-0 col-md-6 opacity`
@@ -40,7 +30,7 @@ function profile (){
 
     let container = document.getElementById("container")
     container.appendChild(articleProfile)
-    articleProfile.appendChild(titleProfile) 
+    articleProfile.appendChild(titleProfile)
     articleProfile.appendChild(text)
 
 }

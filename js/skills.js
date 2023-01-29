@@ -1,4 +1,4 @@
-function skills (){
+function skills() {
     // i create skils article
     const skillsArticle = document.createElement('article')
     skillsArticle.id = "skills"
@@ -11,8 +11,8 @@ function skills (){
     const rowNode = document.createElement('div')
     const rowPhp = document.createElement('div')
     const rowPython = document.createElement('div')
-    const rowPhotoshop = document.createElement('div')
-    const rowRef = document.createElement('div')
+    const rowGitlab = document.createElement('div')
+    const rowCiCd = document.createElement('div')
     const rowGit = document.createElement('div')
 
     // needed for bootstrap
@@ -23,8 +23,8 @@ function skills (){
     rowNode.className = "row"
     rowPhp.className = "row"
     rowPython.className = "row"
-    rowPhotoshop.className = "row"
-    rowRef.className = "row"
+    rowGitlab.className = "row"
+    rowCiCd.className = "row"
     rowGit.className = "row"
 
     // i create éléments with assignation
@@ -36,8 +36,8 @@ function skills (){
     const nodeJs = document.createElement('p')
     const php = document.createElement('p')
     const python = document.createElement('p')
-    const photoshop = document.createElement('p')
-    const referencement = document.createElement('p')
+    const gitlab = document.createElement('p')
+    const cicd = document.createElement('p')
     const git = document.createElement('p')
 
     skillsTitle.id = `skills-title`
@@ -47,11 +47,11 @@ function skills (){
     vanilla.textContent = `Vanilla`
     jquery.textContent = `jQuery`
     nodeJs.textContent = `NodeJs Angular`
-    php.textContent = `Php - Sql - Bash - Linux`
     python.textContent = `Python - Django`
-    photoshop.textContent = `Photoshop Illustrator`
-    referencement.textContent = `Referencement`
-    git.textContent= `Git`
+    php.textContent = `Php - Sql`
+    gitlab.textContent = `Gitlab`
+    cicd.textContent = `CiCd`
+    git.textContent = `Git-Bash-Linux`
 
     const imgHtml = document.createElement('img')
     const imgJs = document.createElement('img')
@@ -61,18 +61,18 @@ function skills (){
     const imgPhp = document.createElement('img')
     const imgPython = document.createElement('img')
     const imgGit = document.createElement('img')
-    const imgPhotoshop = document.createElement('img')
-    const imgRef = document.createElement('img')
+    const imgGitlab = document.createElement('img')
+    const imgCiCd = document.createElement('img')
 
     imgHtml.src = "assets/pictures/4etoiles.png"
-    imgJs.src = "assets/pictures/4etoiles.png"
+    imgJs.src = "assets/pictures/3etoiles.png"
     imgVanilla.src = "assets/pictures/4etoiles.png"
     imgJquery.src = "assets/pictures/4etoiles.png"
     imgNode.src = "assets/pictures/2etoiles.png"
     imgPhp.src = "assets/pictures/2etoiles.png"
     imgPython.src = "assets/pictures/4etoiles.png"
-    imgPhotoshop.src = "assets/pictures/2etoiles.png"
-    imgRef.src = "assets/pictures/2etoiles.png"
+    imgGitlab.src = "assets/pictures/2etoiles.png"
+    imgCiCd.src = "assets/pictures/2etoiles.png"
     imgGit.src = "assets/pictures/3etoiles.png"
 
     // bootstrap class and mine
@@ -83,22 +83,22 @@ function skills (){
     vanilla.className = `col-xs-offset-2 col-xs-5 art-p margin-moins`
     jquery.className = `col-xs-offset-2 col-xs-5 art-p margin-moins`
     nodeJs.className = `col-xs-offset-2 col-xs-5 art-p margin-moins`
-    php.className = `col-xs-offset-1 col-xs-6 art-p margin-plus`
     python.className = `col-xs-offset-1 col-xs-6 art-p margin-plus`
-    photoshop.className = `col-xs-offset-1 col-xs-6 art-p margin-plus`
-    referencement.className = `col-xs-offset-1 col-xs-6 art-p margin-moins`
-    git.className = `col-xs-offset-1 col-xs-6 art-p margin-moins`
+    php.className = `col-xs-offset-1 col-xs-6 art-p margin-moins`
+    git.className = `col-xs-offset-1 col-xs-6 art-p margin-plus`
+    gitlab.className = `col-xs-offset-1 col-xs-6 art-p margin-moins`
+    cicd.className = `col-xs-offset-1 col-xs-6 art-p margin-moins`
 
     imgHtml.className = `col-xs-4`
     imgJs.className = `col-xs-4 margin-plus`
     imgVanilla.className = `col-xs-4 margin-moins`
     imgJquery.className = `col-xs-4 margin-moins`
     imgNode.className = `col-xs-4 margin-moins`
-    imgPhp.className = `col-xs-4 margin-plus`
     imgPython.className = `col-xs-4 margin-plus`
-    imgPhotoshop.className = `col-xs-4 margin-plus`
-    imgRef.className = `col-xs-4 margin-moins`
-    imgGit.className = `col-xs-4 margin-moins`
+    imgPhp.className = `col-xs-4 margin-moins`
+    imgGit.className = `col-xs-4 margin-plus`
+    imgGitlab.className = `col-xs-4 margin-moins`
+    imgCiCd.className = `col-xs-4 margin-moins`
 
     let container = document.getElementById('container')
     container.appendChild(skillsArticle)
@@ -131,18 +131,18 @@ function skills (){
     skillsArticle.appendChild(rowPhp)
     rowPhp.appendChild(php)
     rowPhp.appendChild(imgPhp)
-    
+
     skillsArticle.appendChild(rowGit)
     rowGit.appendChild(git)
     rowGit.appendChild(imgGit)
 
-    skillsArticle.appendChild(rowPhotoshop)
-    rowPhotoshop.appendChild(photoshop)
-    rowPhotoshop.appendChild(imgPhotoshop)
+    skillsArticle.appendChild(rowGitlab)
+    rowGitlab.appendChild(gitlab)
+    rowGitlab.appendChild(imgGitlab)
 
-    skillsArticle.appendChild(rowRef)
-    rowRef.appendChild(referencement)
-    rowRef.appendChild(imgRef)
+    skillsArticle.appendChild(rowCiCd)
+    rowCiCd.appendChild(cicd)
+    rowCiCd.appendChild(imgCiCd)
 
 
 }
